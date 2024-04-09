@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('fonts-size-root.css');
+
+@font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        src: url(../fonts/Roboto-Regular.woff2) format('woff2');
+    }
+
+@font-face {
+        font-family: 'Roboto-bold';
+        font-weight: 700;
+        src: url(../fonts/Roboto-Bold.woff2) format('woff2');
+    }
+
+@font-face {
+        font-family: 'Roboto-black';
+        font-weight: 900;
+        src: url(../fonts/Roboto-Black.woff2) format('woff2');
+    }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+h1{
+    font-size: var(--size-h1);
+    font-family: 'Roboto-black', Verdana, Geneva, Tahoma, sans-serif; 
+}
+h2{
+    font-size: var(--size-h2);
+    font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
+}
+h3{
+    font-size: var(--size-h3);
+    font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
+}
+h4{
+    font-size: var(--size-h4);
+    font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
+}
+h5{
+    font-size: var(--size-h5);
+    font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
+}
+p{
+    font-size: var(--size-p);
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
+
+}
