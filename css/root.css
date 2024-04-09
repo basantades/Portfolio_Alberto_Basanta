@@ -1,0 +1,30 @@
+:root{
+    --primary-light-00: #17B598;
+    --primary-light-10: #30D1B1;
+    --primary-light-20: #71EACE;
+    --primary-dark-00: #0F927C;
+    --primary-dark-10: #117465;
+    --primary-dark-20: #125D52;
+    --secondary-light-00: #3191C6;
+    --secondary-light-10: #5EAFDB;
+    --secondary-light-20: #91C8E8;
+    --secondary-dark-00: #2174A8;
+    --secondary-dark-10: #1C5D88;
+    --secondary-dark-20: #1B4F71;
+    --neutral-light-00: #9094A0;
+    --neutral-light-10: #D9DADE;
+    --neutral-light-20: #F7F8F8;
+    --neutral-dark-00: #5C606D;
+    --neutral-dark-10: #41444B;
+    --neutral-dark-20: #292A2F;
+    --black: #000000;
+    --white: #ffffff;
+    --gradient: linear-gradient(303deg, #5fb0db 0%, #71ebce 60%, #86e9a4 100%);
+    --gradient-color: #5fb0db;
+    }
+
+
+
+/* Degradado:
+background-color: #5fb0db;
+background-image: linear-gradient(303deg, #5fb0db 0%, #71ebce 60%, #86e9a4 100%); */
