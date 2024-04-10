@@ -60,7 +60,11 @@ p{
     font-size: var(--size-p);
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
     line-height: 1.4;
-
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 ::-webkit-scrollbar {
@@ -73,4 +77,41 @@ p{
 }
 ::-webkit-scrollbar-track {
     background-color: var(--black);
+}
+
+header{
+    background-color: var(--black);
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    display: flex;
+    gap: 20px;
+    font-size: var(--size-h5);
+}
+#slider{
+    background-image: var(--gradient);
+    min-height: 100vh;
+    padding: 10px;
+    padding-top: 100px;
+ color: var(--black);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-content: center;
+}
+
+.img-portfolio{
+    background-color: var(--black);
+    overflow-x: scroll;
+    cursor: grab;
+}
+
+.centrado{
+    text-align: center;
+    margin: 0 auto;
 }
