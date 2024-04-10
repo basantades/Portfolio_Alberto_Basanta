@@ -38,8 +38,22 @@
 
 h1{
     font-size: var(--size-h1);
-    font-family: 'Roboto-black', Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: 'Roboto-black', Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary-light-00);
 }
+    @supports (
+        (-webkit-background-clip: text) or (-webkit-text-fill-color: transparent)
+      ) {
+        h1 {
+          background: var(--gradient);
+          background-size: contain;
+          background-repeat: repeat;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+
 h2{
     font-size: var(--size-h2);
     font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
