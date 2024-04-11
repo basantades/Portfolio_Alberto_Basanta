@@ -109,6 +109,7 @@ nav{
 }
 #slider{
     background-image: var(--gradient);
+    background-color: var(--gradient-color);
     min-height: 100vh;
     padding: 10px;
     padding-top: 100px;
