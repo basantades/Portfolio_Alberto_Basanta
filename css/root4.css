@@ -1,0 +1,48 @@
+:root, :root.dark {
+    --primary-light-00: #ed8c1c;
+    --primary-light-10: #f1a946;
+    --primary-light-20: #f6ca7b;
+    --primary-dark-00: #df7517;
+    --primary-dark-10: #b95a15;
+    --primary-dark-20: #934619;
+    --secondary-light-00: #e54e4e;
+    --secondary-light-10: #f07979;
+    --secondary-light-20: #f7aaaa;
+    --secondary-dark-00: #d23333;
+    --secondary-dark-10: #b02525;
+    --secondary-dark-20: #922222;
+    --neutral-light-00: #9094A0;
+    --neutral-light-10: #D9DADE;
+    --neutral-light-20: #F7F8F8;
+    --neutral-dark-00: #5C606D;
+    --neutral-dark-10: #41444B;
+    --neutral-dark-20: #292A2F;
+    --bg-color: #212026;
+    --text-color: #ffffff;
+    --gradient: linear-gradient(55deg, #e54e4e 0%, #ed8c1c 60%, #ffde7d 100%);
+    --gradient-color: #ed8c1c;
+    }
+:root.light {
+    --primary-light-00: #df7517;
+    --primary-light-10: #b95a15;
+    --primary-light-20: #934619;
+    --primary-dark-00: #ed8c1c;
+    --primary-dark-10: #f1a946;
+    --primary-dark-20: #f6ca7b;
+    --secondary-light-00: #d23333;
+    --secondary-light-10: #b02525;
+    --secondary-light-20: #922222;
+    --secondary-dark-00: #e54e4e;
+    --secondary-dark-10: #f07979;
+    --secondary-dark-20: #f7aaaa;
+    --neutral-light-00: #5C606D;
+    --neutral-light-10: #41444B;
+    --neutral-light-20: #292A2F;
+    --neutral-dark-00: #9094A0;
+    --neutral-dark-10: #D9DADE;
+    --neutral-dark-20: #F7F8F8;
+    --bg-color: #ffffff;
+    --text-color: #212026;
+    --gradient: linear-gradient(55deg, #d23333 0%, #df7517 60%, #ffde7d 100%);
+    --gradient-color: #df7517;
+    }

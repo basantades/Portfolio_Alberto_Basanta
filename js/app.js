@@ -3,7 +3,12 @@ const iconoColor = document.getElementById('iconoColor');
 function changeColor() {
     if (rootcss.getAttribute('href') === 'css/root.css') {
         rootcss.setAttribute('href', 'css/root2.css');
-    } else {
+    } else if (rootcss.getAttribute('href') === 'css/root2.css') {
+        rootcss.setAttribute('href', 'css/root3.css');
+    } else if (rootcss.getAttribute('href') === 'css/root3.css') {
+        rootcss.setAttribute('href', 'css/root4.css');
+    }
+    else {
         rootcss.setAttribute('href', 'css/root.css');
     }
 }
@@ -14,14 +19,14 @@ const iconoDark = document.getElementById('iconoDark');
 const html = document.querySelector('html');
 
 function changeTheme() {
-    if (html.getAttribute('class') === 'light') {
-        html.setAttribute('class', 'dark');
-        iconoDark.classList.add('ocultar');
-        iconoLight.classList.remove('ocultar');
-    } else {
+    if (html.getAttribute('class') === 'dark') {
         html.setAttribute('class', 'light');
         iconoLight.classList.add('ocultar');
         iconoDark.classList.remove('ocultar');
+    } else {
+        html.setAttribute('class', 'dark');
+        iconoDark.classList.add('ocultar');
+        iconoLight.classList.remove('ocultar');
     }
 }
 iconoLight.addEventListener('click', changeTheme);
