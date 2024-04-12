@@ -7,6 +7,22 @@ function changeColor() {
         rootcss.setAttribute('href', 'css/root.css');
     }
 }
+iconoColor.addEventListener('click', changeColor);
 
+const iconoLight = document.getElementById('iconoLight');
+const iconoDark = document.getElementById('iconoDark');
+const html = document.querySelector('html');
 
-iconoColor.addEventListener('click', changeColor)
+function changeTheme() {
+    if (html.getAttribute('class') === 'light') {
+        html.setAttribute('class', 'dark');
+        iconoDark.classList.add('ocultar');
+        iconoLight.classList.remove('ocultar');
+    } else {
+        html.setAttribute('class', 'light');
+        iconoLight.classList.add('ocultar');
+        iconoDark.classList.remove('ocultar');
+    }
+}
+iconoLight.addEventListener('click', changeTheme);
+iconoDark.addEventListener('click', changeTheme);

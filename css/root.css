@@ -1,4 +1,4 @@
-:root{
+:root, :root.dark {
     --primary-light-00: #17B598;
     --primary-light-10: #30D1B1;
     --primary-light-20: #71EACE;
@@ -17,14 +17,33 @@
     --neutral-dark-00: #5C606D;
     --neutral-dark-10: #41444B;
     --neutral-dark-20: #292A2F;
-    --black: #212026;
-    --white: #ffffff;
+    --bg-color: #212026;
+    --text-color: #ffffff;
     --gradient: linear-gradient(303deg, #5fb0db 0%, #71ebce 60%, #86e9a4 100%);
     --gradient-color: #71ebce;
     }
 
-
-
-/* Degradado:
-background-color: #5fb0db;
-background-image: linear-gradient(303deg, #5fb0db 0%, #71ebce 60%, #86e9a4 100%); */
+:root.light{
+    --primary-light-00: #0F927C;
+    --primary-light-10: #117465;
+    --primary-light-20: #125D52;
+    --primary-dark-00: #17B598;
+    --primary-dark-10: #30D1B1;
+    --primary-dark-20: #71EACE;
+    --secondary-light-00: #2174A8;
+    --secondary-light-10: #1C5D88;
+    --secondary-light-20: #1B4F71;
+    --secondary-dark-00: #3191C6;
+    --secondary-dark-10: #5EAFDB;
+    --secondary-dark-20: #91C8E8;
+    --neutral-light-00: #5C606D;
+    --neutral-light-10: #41444B;
+    --neutral-light-20: #292A2F;
+    --neutral-dark-00: #9094A0;
+    --neutral-dark-10: #D9DADE;
+    --neutral-dark-20: #F7F8F8;
+    --bg-color: #ffffff;
+    --text-color: #212026;
+    --gradient: linear-gradient(303deg, #1C5D88 0%, #0F927C 60%, #86e9a4 100%);
+    --gradient-color: #0F927C;
+    }

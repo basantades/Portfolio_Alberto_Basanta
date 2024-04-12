@@ -1,4 +1,4 @@
-:root{
+:root, :root.dark {
     --primary-light-00: #d571eb;
     --primary-light-10: #e8b2f5;
     --primary-light-20: #f1d4fa;
@@ -17,8 +17,32 @@
     --neutral-dark-00: #5C606D;
     --neutral-dark-10: #41444B;
     --neutral-dark-20: #292A2F;
-    --black: #212026;
-    --white: #ffffff;
+    --bg-color: #212026;
+    --text-color: #ffffff;
     --gradient: linear-gradient(303deg, #dbc45f 0%, #d571eb 60%, #8b61df 100%);
     --gradient-color: #d571eb;
+    }
+:root.light {
+    --primary-light-00: #c755e0;
+    --primary-light-10: #ad35c4;
+    --primary-light-20: #9129a2;
+    --primary-dark-00: #d571eb;
+    --primary-dark-10: #e8b2f5;
+    --primary-dark-20: #f1d4fa;
+    --secondary-light-00: #8b61df;
+    --secondary-light-10: #8651d6;
+    --secondary-light-20: #763fc2;
+    --secondary-dark-00: #b099ec;
+    --secondary-dark-10: #cbbef4;
+    --secondary-dark-20: #e1dbf9;
+    --neutral-light-00: #5C606D;
+    --neutral-light-10: #41444B;
+    --neutral-light-20: #292A2F;
+    --neutral-dark-00: #9094A0;
+    --neutral-dark-10: #D9DADE;
+    --neutral-dark-20: #F7F8F8;
+    --bg-color: #ffffff;
+    --text-color: #212026;
+    --gradient: linear-gradient(303deg, #c5ac3d 0%, #c755e0 60%, #763fc2 100%);
+    --gradient-color: #c755e0;
     }

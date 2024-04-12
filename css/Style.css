@@ -31,8 +31,8 @@
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 h1{
@@ -76,7 +76,7 @@ p, body{
 }
 a{
     text-decoration: none;
-    color: var(--white);
+    color: var(--text-color);
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
 }
 
@@ -86,14 +86,14 @@ a{
 ::-webkit-scrollbar-thumb {
     background-image: var(--gradient);
     border-radius: 10px;
-    border: 3px solid var(--black);
+    border: 3px solid var(--bg-color);
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--black);
+    background-color: var(--bg-color);
 }
 
 header{
-    background-color: var(--black);
+    background-color: var(--bg-color);
     width: 100%;
     padding: 20px;
     position: absolute;
@@ -111,9 +111,24 @@ nav :hover{
 color: var(--primary-light-10);
 }
 
+#selectorColores {
+    display: flex;
+    padding: 10px 16px;
+    gap: 20px;
+    border: 2px solid var(--primary-dark-20);
+    border-radius: 16px;
+}
 #iconoColor {
     -webkit-mask: url(/images/color.svg) no-repeat 50% 50%;
     mask: url(/images/color.svg) no-repeat 50% 50%;
+}
+#iconoDark {
+    -webkit-mask: url(/images/luna.svg) no-repeat 50% 50%;
+    mask: url(/images/luna.svg) no-repeat 50% 50%;
+}
+#iconoLight {
+    -webkit-mask: url(/images/sol.svg) no-repeat 50% 50%;
+    mask: url(/images/sol.svg) no-repeat 50% 50%;
 }
 
 .icono-svg {
@@ -121,12 +136,14 @@ color: var(--primary-light-10);
     width: 24px;
     transform: scale(1.5);
     background-color: var(--neutral-light-10);
-
 }
 
 .icono-svg:hover {
     cursor: pointer;
     background-image: var(--gradient);
+}
+.ocultar {
+    display: none;
 }
 
 #slider{
@@ -135,7 +152,7 @@ color: var(--primary-light-10);
     min-height: 100vh;
     padding: 10px;
     padding-top: 100px;
- color: var(--black);
+ color: var(--bg-color);
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -143,7 +160,7 @@ color: var(--primary-light-10);
 }
 
 .img-portfolio{
-    background-color: var(--black);
+    background-color: var(--bg-color);
     overflow-x: scroll;
     cursor: grab;
 }
