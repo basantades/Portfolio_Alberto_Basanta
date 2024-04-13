@@ -19,8 +19,11 @@
     --neutral-dark-20: #292A2F;
     --bg-color: #212026;
     --text-color: #ffffff;
-    --gradient: linear-gradient(303deg, #5fb0db 0%, #17B598 60%, #86e9a4 100%);
+    --black: #212026;
+    --white: #ffffff;
+    --gradient: linear-gradient(300deg, #5fb0db 0%, #17B598 60%, #86e9a4 100%);
     --gradient-color: #17B598;
+    --highlight-color: #86e9a4;
     }
 
 :root.light{
@@ -44,6 +47,9 @@
     --neutral-dark-20: #F7F8F8;
     --bg-color: #ffffff;
     --text-color: #212026;
-    --gradient: linear-gradient(303deg, #1C5D88 0%, #0F927C 60%, #86e9a4 100%);
+    --black: #212026;
+    --white: #ffffff;
+    --gradient: linear-gradient(300deg, #1C5D88 0%, #0F927C 60%, #86e9a4 100%);
     --gradient-color: #0F927C;
+    --highlight-color: #86e9a4;
     }

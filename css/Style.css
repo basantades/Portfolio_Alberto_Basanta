@@ -7,35 +7,32 @@
         font-weight: 400;
         src: url(../fonts/Roboto-Regular.woff2) format('woff2');
     }
-
 @font-face {
         font-family: 'Roboto-bold';
         font-weight: 700;
         src: url(../fonts/Roboto-Bold.woff2) format('woff2');
     }
-
 @font-face {
         font-family: 'Roboto-black';
         font-weight: 900;
         src: url(../fonts/Roboto-Black.woff2) format('woff2');
     }
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
 #wrapper{
-    transition: 1s;
     width: 100%;
+    max-width: 100vw;
     height: 100%;
     min-height: 100vh;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-
+#wrapper section{
+transition: 1s;
+}
 h1{
     font-size: var(--size-h1);
     font-family: 'Roboto-black', Verdana, Geneva, Tahoma, sans-serif;
@@ -43,7 +40,7 @@ h1{
 .textoDegradado {
     color: var(--primary-light-00);
 }
-    @supports (
+@supports (
         (-webkit-background-clip: text) or (-webkit-text-fill-color: transparent)
       ) {
         .textoDegradado {
@@ -53,9 +50,7 @@ h1{
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
         }
-      }
-
-
+}
 h2{
     font-size: var(--size-h2);
     font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
@@ -102,6 +97,7 @@ header{
     height: 70px;
     padding: 10px 30px;
     position: absolute;
+    z-index: 10;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -115,6 +111,12 @@ nav{
     gap: 30px;
     font-size: var(--size-p);
 }
+@media screen and (max-width: 600px) {
+    nav{
+        display: none;
+    }
+    
+}
 
 nav :hover{
 color: var(--primary-light-10);
@@ -124,6 +126,7 @@ color: var(--primary-light-10);
     transition: 0.5s;
     background-color: var(--bg-color);
     position: fixed;
+    z-index: 20;
     top: 14px;
     right: 20px;
     display: flex;
@@ -132,6 +135,8 @@ color: var(--primary-light-10);
     border: 2px solid var(--primary-dark-20);
     border-radius: 0 26px 0 26px;
 }
+
+
 #iconoColor {
     -webkit-mask: url(/images/color.svg) no-repeat 50% 50%;
     mask: url(/images/color.svg) no-repeat 50% 50%;
@@ -160,23 +165,107 @@ color: var(--primary-light-10);
 }
 
 #slider{
+    position: relative;
     background-image: var(--gradient);
     background-color: var(--gradient-color);
     min-height: 100vh;
+    width: 100%;
     padding: 10px;
     padding-top: 80px;
  color: var(--bg-color);
  display: flex;
  flex-direction: column;
  justify-content: center;
- align-content: center;
+ align-items: center;
  overflow: hidden;
 }
+.marcoSlider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid var(--primary-light-10);
+    width: 80%;
+    max-width: 1000px;
+    padding: 5%;
+}
 
+#slider h1{
+    z-index: 8;
+}
+
+.bolaMov1{
+    background-color: var(--highlight-color);
+    filter: blur(10vh);
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    bottom: 40px;
+    z-index: 4;
+    animation: rotar 8s infinite ease-in-out;
+    transform-origin: 50% -100%;
+}
+.bolaMov2{
+    background-color: var(--highlight-color);
+    opacity: 60%;
+    filter: blur(8vh);
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    position: absolute;
+    top: 130px;
+    right: 20%;
+    z-index: 5;
+    animation: gradient 6s infinite;
+}
+.bolaMov3{
+    background-color: var(--primary-light-00);
+    filter: blur(6vh);
+    width: 350px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 3;
+    animation: rotar 12s infinite ease-in-out;
+    transform-origin: -50% 100%;
+}
+.bolaMov4{
+    background-color: var(--secondary-light-00);
+    opacity: 70%;
+    filter: blur(15vh);
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: -30%;
+    z-index: 1;
+    animation: gradient 7s infinite;
+}
+.bolaMov5{
+    background-color: var(--highlight-color);
+    opacity: 70%;
+    filter: blur(8vh);
+    width: 15%;
+    height: 10%;
+    border-radius: 50%;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    z-index: 6;
+    animation: rotar 5s infinite;
+    transform-origin: -100% -120%;
+
+}
 .img-portfolio{
     overflow-x: scroll;
     cursor: grab;
 }
+
 
 .centrado{
     text-align: center;
@@ -201,4 +290,26 @@ color: var(--primary-light-10);
 
 .animate-movimiento-rebote {
     animation: ampliar-rebote 0.6s ease-in-out;
+}
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+    50% {
+        transform: rotate(50deg) scale(0.5);
+        opacity: 0.9;
+    
+    }
+    100% {
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes gradient {
+    60% {
+        transform: scale(1.5) translate(-70%, -20%);
+    }
 }
