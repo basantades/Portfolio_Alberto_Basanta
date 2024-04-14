@@ -1,7 +1,7 @@
 const rootcss = document.getElementById('rootcss');
 const iconoColor = document.getElementById('iconoColor');
 function changeColor() {
-    if (rootcss.getAttribute('href') === 'css/root.css') {
+    if (rootcss.getAttribute('href') === 'css/root.css' || rootcss.getAttribute('href') === "css/root.css") {
         rootcss.setAttribute('href', 'css/root2.css');
     } else if (rootcss.getAttribute('href') === 'css/root2.css') {
         rootcss.setAttribute('href', 'css/root3.css');
