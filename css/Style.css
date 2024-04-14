@@ -270,7 +270,7 @@ section {
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .cuadro {
     background-image: var(--gradient);
@@ -405,7 +405,7 @@ img {
     background-color: var(--gradient-color);
     width: 100%;
     height: 4px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 
 	view-timeline-name: --filete;
 	view-timeline-axis: block;
