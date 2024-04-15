@@ -5,11 +5,7 @@ let punto2 = document.querySelector('.punto2');
 let punto3 = document.querySelector('.punto3');
 let punto4 = document.querySelector('.punto4');
 function changeColor() {
-    if (rootcss.getAttribute('href') === 'css/root.css' || rootcss.getAttribute('href') === "css/root.css") {
-        rootcss.setAttribute('href', 'css/root2.css');
-        punto1.classList.remove('actual');
-        punto2.classList.add('actual');
-    } else if (rootcss.getAttribute('href') === 'css/root2.css') {
+    if (rootcss.getAttribute('href') === 'css/root2.css') {
         rootcss.setAttribute('href', 'css/root3.css');
         punto2.classList.remove('actual');
         punto3.classList.add('actual');
@@ -17,11 +13,15 @@ function changeColor() {
         rootcss.setAttribute('href', 'css/root4.css');
         punto3.classList.remove('actual');
         punto4.classList.add('actual');
-    }
-    else {
+    } else if (rootcss.getAttribute('href') === 'css/root4.css') {
         rootcss.setAttribute('href', 'css/root.css');
         punto4.classList.remove('actual');
         punto1.classList.add('actual');
+    }
+    else {
+        rootcss.setAttribute('href', 'css/root2.css');
+        punto1.classList.remove('actual');
+        punto2.classList.add('actual');
     }
 }
 iconoColor.addEventListener('click', changeColor);
