@@ -137,7 +137,6 @@ nav{
     gap: 16px;
     border-radius: 20px;
 }
-
 #iconoColor {
     -webkit-mask: url(/images/color.svg) no-repeat 0px 50%;
     mask: url(/images/color.svg) no-repeat 0px 50%;
