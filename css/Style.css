@@ -101,7 +101,7 @@ header{
     transition: 0.5s ease-out;
     background-color: var(--bg-color);
     width: 100%;
-    height: 70px;
+    height: 68px;
     padding: 10px 30px;
     position: absolute;
     z-index: 10;
@@ -133,14 +133,15 @@ nav{
     top: 14px;
     right: 14px;
     display: flex;
-    padding: 8px 16px;
-    gap: 20px;
+    padding: 8px 14px 8px 14px;
+    gap: 16px;
     border-radius: 20px;
 }
 
 #iconoColor {
-    -webkit-mask: url(/images/color.svg) no-repeat 50% 50%;
-    mask: url(/images/color.svg) no-repeat 50% 50%;
+    -webkit-mask: url(/images/color.svg) no-repeat 0px 50%;
+    mask: url(/images/color.svg) no-repeat 0px 50%;
+    width: 32px;
 }
 #iconoDark {
     -webkit-mask: url(/images/luna.svg) no-repeat 50% 50%;
@@ -152,6 +153,7 @@ nav{
 }
 
 .icono-svg {
+    z-index: 22;
     height: 24px;
     width: 24px;
     background-color: var(--bg-color);
@@ -164,7 +166,47 @@ nav{
 .ocultar {
     display: none;
 }
-
+.puntos {
+    z-index: 21;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 40px;
+    height: 40px;
+}
+.punto1, .punto2, .punto3, .punto4 {
+    transition: 0.5s ease-out;
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    transform-origin: -9px;
+}
+.punto1{
+    background-color: #17B598;
+    transform: rotate(-60deg);
+    border: 1px solid var(--text-color);
+}
+.punto2{
+    background-color: #40a0f0;
+    transform: rotate(-20deg);
+    border: 1px solid var(--text-color);
+}
+.punto3{
+    background-color: #d571eb;
+    transform: rotate(20deg);
+    border: 1px solid var(--text-color);
+}
+.punto4{
+    background-color: #ed8c1c;
+    transform: rotate(60deg);
+    border: 1px solid var(--text-color);
+}
+.actual {
+    border: none;
+    }
 #slider{
     position: relative;
     background-image: var(--gradient);
@@ -172,7 +214,7 @@ nav{
     min-height: 100vh;
     width: 100%;
     padding: 10px;
-    padding-top: 80px;
+    padding-top: 78px;
  color: var(--bg-color);
  display: flex;
  flex-direction: column;
@@ -293,6 +335,7 @@ section {
 .doscolumnas {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
     gap: 20px;
 }
 @media screen and (max-width: 768px) {
