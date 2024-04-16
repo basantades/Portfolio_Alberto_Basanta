@@ -355,7 +355,6 @@ align-items: center;
     width: 60%;
     border-radius: 10px;
 }
-
 /* .lista:first-child {
     border-top: 2px solid var(--neutral-dark-00);
 } */
@@ -363,19 +362,41 @@ align-items: center;
     padding: 16px 0;
     border-bottom: 2px solid var(--neutral-dark-00);
 }
+.listado a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.iconoscontacto {
+    height: 24px;
+    width: 24px;
+    background-color: var(--text-color);
+}
+.listado:hover .iconoscontacto{ 
+    cursor: pointer;
+    background-image: var(--gradient);
+}
 #iconoEmail {
     -webkit-mask: url(/images/Email.svg) no-repeat 50% 50%;
     mask: url(/images/Email.svg) no-repeat 50% 50%;
 }
-
-
+#iconoLinkedin {
+    -webkit-mask: url(/images/Linkedin.svg) no-repeat 50% 50%;
+    mask: url(/images/Linkedin.svg) no-repeat 50% 50%;
+}
+#iconoGithub {
+    -webkit-mask: url(/images/Github.svg) no-repeat 50% 50%;
+    mask: url(/images/Github.svg) no-repeat 50% 50%;
+}
+#iconoWhatsapp {
+    -webkit-mask: url(/images/Whatsapp.svg) no-repeat 50% 50%;
+    mask: url(/images/Whatsapp.svg) no-repeat 50% 50%;
+}
 .marco {
     border: 5px solid var(--primary-dark-00);
     height: 100%;
     padding: 50px;
 }
-
-
 footer {
     padding: 20px;
     text-align: right;
