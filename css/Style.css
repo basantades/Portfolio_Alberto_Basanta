@@ -376,6 +376,10 @@ align-items: center;
     cursor: pointer;
     background-image: var(--gradient);
 }
+.listado:hover a{ 
+    cursor: pointer;
+    color: var(--primary-light-10);
+}
 #iconoEmail {
     -webkit-mask: url(/images/Email.svg) no-repeat 50% 50%;
     mask: url(/images/Email.svg) no-repeat 50% 50%;
