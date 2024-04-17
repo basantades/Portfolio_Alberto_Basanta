@@ -77,6 +77,9 @@ p, body{
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
     line-height: 1.4;
 }
+.bold{
+    font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
+}
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -318,6 +321,10 @@ section {
     width: 10px;
     height: var(--size-h2);
 }
+.textoPortfolio {
+    padding: 40px;
+}
+
 .imgPortfolio{
     overflow-x: scroll;
     cursor: grab;
@@ -344,7 +351,6 @@ section {
     }
     
 }
-
 .flexcentrado {
 width: 100%;
 display: flex;
@@ -355,12 +361,28 @@ align-items: center;
     width: 60%;
     border-radius: 10px;
 }
-/* .lista:first-child {
-    border-top: 2px solid var(--neutral-dark-00);
-} */
+.destacado {
+    color: var(--primary-light-00);
+    margin: 10px 0;
+}
+.destacado2 {
+    color: var(--secondary-light-00);
+    margin: 10px 0;
+}
+.contacto{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.lista{
+    margin: 0 40px;
+
+}
+.lista:first-child {
+    border-top: 2px solid var(--neutral-dark-10);
+}
 .listado {
-    padding: 16px 0;
-    border-bottom: 2px solid var(--neutral-dark-00);
+    padding: 16px;
+    border-bottom: 2px solid var(--neutral-dark-10);
 }
 .listado a {
     display: flex;
@@ -373,11 +395,9 @@ align-items: center;
     background-color: var(--text-color);
 }
 .listado:hover .iconoscontacto{ 
-    cursor: pointer;
     background-image: var(--gradient);
 }
 .listado:hover a{ 
-    cursor: pointer;
     color: var(--primary-light-10);
 }
 #iconoEmail {
@@ -396,19 +416,43 @@ align-items: center;
     -webkit-mask: url(/images/Whatsapp.svg) no-repeat 50% 50%;
     mask: url(/images/Whatsapp.svg) no-repeat 50% 50%;
 }
+#iconoUp {
+    -webkit-mask: url(/images/ArrowUp.svg) no-repeat 50% 50%;
+    mask: url(/images/ArrowUp.svg) no-repeat 50% 50%;
+}
 .marco {
     border: 5px solid var(--primary-dark-00);
     height: 100%;
     padding: 50px;
+    text-align: center;
 }
 footer {
     padding: 20px;
-    text-align: right;
     color: var(--neutral-light-00);
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3px;
+}
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+    }    
+}
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 footer p {
     font-size: calc(var(--size-p) * 0.75);
 }
+footer a:hover .iconoscontacto{ 
+    background-image: var(--gradient);
+}
+
 @keyframes ampliar-rebote {
     0% {
         transform: scale(10%);
