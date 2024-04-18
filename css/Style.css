@@ -235,15 +235,16 @@ nav{
 }
 
 #slider h1{
-    z-index: 8;
+    z-index: 9;
     text-align: center;
 }
 
 .bolaMov1{
     background-color: var(--highlight-color);
-    filter: blur(10vh);
-    width: 40%;
-    height: 40%;
+    opacity: 70%;
+    filter: blur(100px);
+    width: 480px;
+    height: 350px;
     border-radius: 50%;
     position: absolute;
     left: -10px;
@@ -255,9 +256,9 @@ nav{
 .bolaMov2{
     background-color: var(--highlight-color);
     opacity: 60%;
-    filter: blur(8vh);
-    width: 20%;
-    height: 20%;
+    filter: blur(60px);
+    width: 300px;
+    height: 320px;
     border-radius: 50%;
     position: absolute;
     top: 130px;
@@ -267,12 +268,12 @@ nav{
 }
 .bolaMov3{
     background-color: var(--primary-light-00);
-    filter: blur(6vh);
-    width: 350px;
-    height: 250px;
+    filter: blur(40px);
+    width: 400px;
+    height: 320px;
     border-radius: 50%;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 10%;
     z-index: 3;
     animation: rotar 12s infinite ease-in-out;
@@ -280,13 +281,13 @@ nav{
 }
 .bolaMov4{
     background-color: var(--secondary-light-00);
-    opacity: 70%;
-    filter: blur(15vh);
-    width: 40%;
-    height: 50%;
+    opacity: 90%;
+    filter: blur(100px);
+    width: 360px;
+    height: 600px;
     border-radius: 50%;
     position: absolute;
-    bottom: 0;
+    bottom: -30%;
     right: -30%;
     z-index: 1;
     animation: gradient 7s infinite;
@@ -294,9 +295,9 @@ nav{
 .bolaMov5{
     background-color: var(--highlight-color);
     opacity: 70%;
-    filter: blur(8vh);
-    width: 15%;
-    height: 10%;
+    filter: blur(50px);
+    width: 200px;
+    height: 90px;
     border-radius: 50%;
     position: absolute;
     top: 55%;
