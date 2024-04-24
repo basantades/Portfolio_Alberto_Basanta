@@ -310,7 +310,7 @@ section {
 }
 
 #destacados {
-    
+
     position: relative;
     overflow: hidden;
     padding-top: 50px;
@@ -337,6 +337,15 @@ section {
     align-items: center;
     gap: 20px;
     margin-bottom: 20px;
+
+    view-timeline-name: --titular;
+	view-timeline-axis: block;
+
+	animation-timeline: --titular;
+	animation-name: fade;
+
+	animation-range: entry 0% cover 50%;
+	animation-fill-mode: both;
 }
 .cuadro {
     background-color: var(--neutral-dark-10);
@@ -561,6 +570,15 @@ footer a:hover .iconoscontacto{
 	to {
 		opacity: 1;
 		scale: 100%;
+	}
+}
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
 	}
 }
 
