@@ -223,32 +223,17 @@ nav{
  align-items: center;
  overflow: hidden;
 }
-/* .marcoSlider{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 10px solid var(--primary-light-10);
-    width: 80%;
-    max-width: 1000px;
-    padding: 5%;
-} */
 
+.textHero{
+
+}
 #slider h1{
-    z-index: 90;
-    opacity: 80%;
     color: var(--primary-dark-20);
     font-size: 16vw;
     line-height: 100%;
 }
 #slider h1:hover {
-    transition: color 0.2s;
 
-    @media (any-pointer: fine) {
-      &:hover {
-        color: var(--bg-color);
-      }
-    }
   }
 
 .bolaMov1{
@@ -276,6 +261,7 @@ nav{
     top: 130px;
     right: 20%;
     z-index: 5;
+    display: inline-block;
     animation: gradient 6s infinite;
 }
 .bolaMov3{
@@ -324,13 +310,23 @@ section {
 }
 
 #destacados {
-    margin:0;
+    position: relative;
     overflow: hidden;
-}
-#destacados h1 {
-    color: var(--neutral-dark-00);
     padding-top: 50px;
-    transform: scale(2);
+    margin:0;
+    height: 200px;
+}
+#destacados h2 {
+    position: absolute;
+    color: var(--neutral-dark-10);
+    font-size: 100px;
+    white-space: nowrap;
+    animation: desplazartexto 18s linear infinite;
+}
+#destacados h2:hover {
+    
+    animation-play-state: paused;
+
 }
 
 
@@ -485,6 +481,29 @@ footer a:hover .iconoscontacto{
     background-image: var(--gradient);
 }
 
+@keyframes aparecer {
+    30% {
+        transform: scale(80%);
+        opacity: 0%;
+    }
+    100% {
+        transform: scale(100%);
+        opacity: 100%;
+    }
+}
+.animate-fade{
+    animation: aparecer 1.6s ease-in-out;
+}
+
+@keyframes desplazartexto{
+    0% {
+        transform: translate(100vw, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
 @keyframes ampliar-rebote {
     0% {
         transform: scale(10%);
@@ -543,6 +562,7 @@ footer a:hover .iconoscontacto{
 		scale: 100%;
 	}
 }
+
 img {
 	view-timeline-name: --image;
 	view-timeline-axis: block;
