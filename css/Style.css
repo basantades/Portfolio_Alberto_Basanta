@@ -76,6 +76,7 @@ p, body{
     font-size: var(--size-p);
     font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif; 
     line-height: 1.4;
+    margin: 10px 0;
 }
 .bold{
     font-family: 'Roboto-bold', Verdana, Geneva, Tahoma, sans-serif; 
@@ -107,6 +108,7 @@ header{
     height: 68px;
     padding: 10px 30px;
     position: absolute;
+    top:0;
     z-index: 10;
     display: flex;
     justify-content: start;
@@ -214,8 +216,6 @@ nav{
     background-color: var(--gradient-color);
     min-height: 100vh;
     width: 100%;
-    padding: 10px;
-    padding-top: 78px;
  color: var(--bg-color);
  display: flex;
  flex-direction: column;
@@ -225,7 +225,12 @@ nav{
 }
 
 .textHero{
-
+min-height: 100vh;
+padding: 10px;
+padding-top: 78px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
 }
 #slider h1{
     color: var(--primary-dark-20);
@@ -235,7 +240,14 @@ nav{
 #slider h1:hover {
 
   }
-
+  .flechaDown {
+    -webkit-mask: url(/images/flechaDown.svg) no-repeat 50% 50%;
+    mask: url(/images/flechaDown.svg) no-repeat 50% 50%;
+    height: 60px;
+    width: 80px;
+    background-color: var(--primary-dark-20);
+    margin: 0 auto;
+}
 .bolaMov1{
     background-color: var(--highlight-color);
     opacity: 70%;
@@ -401,11 +413,9 @@ align-items: center;
 }
 .destacado {
     color: var(--primary-light-00);
-    margin: 10px 0;
 }
 .destacado2 {
     color: var(--secondary-light-00);
-    margin: 10px 0;
 }
 .contacto{
     max-width: 1000px;
@@ -415,9 +425,9 @@ align-items: center;
     margin: 0 40px;
 
 }
-.lista:first-child {
+/* .lista:first-child {
     border-top: 2px solid var(--neutral-dark-10);
-}
+} */
 .listado {
     padding: 16px;
     border-bottom: 2px solid var(--neutral-dark-10);
@@ -453,6 +463,10 @@ align-items: center;
 #iconoWhatsapp {
     -webkit-mask: url(/images/Whatsapp.svg) no-repeat 50% 50%;
     mask: url(/images/Whatsapp.svg) no-repeat 50% 50%;
+}
+#iconoCodepen {
+    -webkit-mask: url(/images/codepen.svg) no-repeat 50% 50%;
+    mask: url(/images/codepen.svg) no-repeat 50% 50%;
 }
 #iconoUp {
     -webkit-mask: url(/images/ArrowUp.svg) no-repeat 50% 50%;
