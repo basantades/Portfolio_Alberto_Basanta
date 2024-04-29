@@ -102,7 +102,6 @@ a:hover {
   border-radius: 10px;
   border: 3px solid var(--bg-color);
 }
-
 header {
   transition: 0.5s ease-out;
   background-color: var(--bg-color);
@@ -130,7 +129,6 @@ nav {
     display: none;
   }
 }
-
 #selectorColores {
   transition: 0.5s ease-out;
   background-color: var(--text-color);
@@ -156,14 +154,12 @@ nav {
   -webkit-mask: url(/images/sol.svg) no-repeat 50% 50%;
   mask: url(/images/sol.svg) no-repeat 50% 50%;
 }
-
 .icono-svg {
   z-index: 22;
   height: 24px;
   width: 24px;
   background-color: var(--bg-color);
 }
-
 .icono-svg:hover {
   cursor: pointer;
   background-image: var(--gradient);
