@@ -241,8 +241,10 @@ nav {
   color: var(--primary-dark-20);
   font-size: 16vw;
   line-height: 100%;
+  transition: 1s;
 }
 /* #slider h1:hover {
+  cursor: pointer;
 } */
 .soloMovil {
   display: none;
@@ -415,17 +417,23 @@ section {
   height: 8px;
   border-radius: 50%;
 }
-.textoPortfolio {
-  padding: 40px;
-}
-
 #portfolio h3 {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px;
   color: var(--secondary-light-00);
 }
 
+.textoPortfolio {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#portfolio h4 {
+  margin: 40px 0 20px 0;
+}
+
 .imgPortfolio {
+  padding-left: 5%;
   overflow-x: scroll;
   cursor: grab;
 }
@@ -438,6 +446,7 @@ section {
   background-image: none;
 }
 .doscolumnas {
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -458,6 +467,7 @@ section {
 }
 .imgAlberto {
   width: 60%;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
 img {
@@ -477,7 +487,7 @@ img {
   color: var(--secondary-light-00);
 }
 .contacto {
-  max-width: 1000px;
+  width: 90%;
   margin: 0 auto;
 }
 .lista {
