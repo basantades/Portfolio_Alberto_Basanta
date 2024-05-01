@@ -212,7 +212,7 @@ nav {
 .actual {
   border: none;
 }
-#slider {
+#hero {
   position: relative;
   background-image: var(--gradient);
   background-color: var(--gradient-color);
@@ -238,7 +238,7 @@ nav {
     z-index: 5;
     }
   }
-#slider h1 {
+#hero h1 {
   color: var(--primary-dark-20);
   font-size: 16vw;
   line-height: 100%;
@@ -436,6 +436,21 @@ section {
 .imgPortfolio::-webkit-scrollbar-thumb:hover {
   background-color: var(--primary-dark-00);
   background-image: none;
+}
+.slider {
+  width: 1000px;
+  /* aspect-ratio: 16 / 9; */
+  display: flex;
+  position: relative;
+  overflow: scroll;
+  scroll-snap-type: x mandatory;
+}
+.slider img {
+  width: 100%;
+  object-fit: cover; /* no se si es necesario */
+  /* position: sticky; */
+  /* left: 0; */
+  scroll-snap-align: center;
 }
 .doscolumnas {
   margin: 0 auto;
