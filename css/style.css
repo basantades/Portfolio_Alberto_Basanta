@@ -451,8 +451,19 @@ section {
   .destacado {
     color: var(--primary-light-00);
   }
+  .botones {
+    margin-top: 30px;
+  }
   .boton {
-    color: var(--secondary-light-00);
+    border-radius: 16px;
+    border: 1px solid var(--text-color);
+    padding: 6px 24px;
+    margin-right: 20px;
+    color: var(--text-color);
+  }
+  .boton:hover {
+    color: var(--primary-light-00);
+    border: 1px solid var(--primary-light-00);
   }
 .doscolumnas {
   margin: 0 auto;
