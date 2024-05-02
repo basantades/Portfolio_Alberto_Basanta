@@ -375,10 +375,9 @@ nav {
 section {
     margin: 50px 0;
   }
-  section h3{
-    padding: 0 20px;
-  }
-  
+.titular h2{
+  text-transform: uppercase;
+}
 .titular {
   display: flex;
   justify-content: center;
@@ -410,48 +409,51 @@ section {
   border-radius: 50%;
 }
 #portfolio h3 {
+  margin: 0 5%;
   text-align: center;
-  margin: 20px;
+  padding-bottom: 40px;
   color: var(--secondary-light-00);
 }
 
 .textoPortfolio {
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 #portfolio h4 {
-  margin: 40px 0 20px 0;
+  margin: 20px 0;
 }
 
-.imgPortfolio {
-  padding-left: 5%;
-  overflow-x: scroll;
-  cursor: grab;
-}
-.imgPortfolio::-webkit-scrollbar-thumb {
-  background-color: var(--primary-dark-20);
-  background-image: none;
-}
-.imgPortfolio::-webkit-scrollbar-thumb:hover {
-  background-color: var(--primary-dark-00);
-  background-image: none;
-}
-.slider {
-  width: 1000px;
-  /* aspect-ratio: 16 / 9; */
-  display: flex;
-  position: relative;
-  overflow: scroll;
-  scroll-snap-type: x mandatory;
-}
-.slider img {
+.carrusel {
   width: 100%;
-  object-fit: cover; /* no se si es necesario */
-  /* position: sticky; */
-  /* left: 0; */
-  scroll-snap-align: center;
-}
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  }
+.interiorCarrusel {
+  display: flex;
+  gap: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+  .carrusel img {
+    height: 300px;
+  }
+  .carrusel img:first-child {
+    padding-left: 5vw;
+  }
+  .carrusel img:last-child {
+    padding-right: 5vw;
+  }
+  .destacado {
+    color: var(--primary-light-00);
+  }
+  .boton {
+    color: var(--secondary-light-00);
+  }
 .doscolumnas {
   margin: 0 auto;
   display: grid;
@@ -476,12 +478,6 @@ section {
   width: 60%;
   margin-bottom: 20px;
   border-radius: 10px;
-}
-.destacado {
-  color: var(--primary-light-00);
-}
-.destacado2 {
-  color: var(--secondary-light-00);
 }
 .contacto {
   width: 90%;
