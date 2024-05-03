@@ -1,0 +1,45 @@
+#iconoColor {
+    -webkit-mask: url(../images/color.svg) no-repeat 0px 50%;
+    mask: url(../images/color.svg) no-repeat 0px 50%;
+    width: 32px;
+  }
+  #iconoDark {
+    -webkit-mask: url(../images/luna.svg) no-repeat 50% 50%;
+    mask: url(../images/luna.svg) no-repeat 50% 50%;
+  }
+  #iconoLight {
+    -webkit-mask: url(../images/sol.svg) no-repeat 50% 50%;
+    mask: url(../images/sol.svg) no-repeat 50% 50%;
+  }
+  #iconoLink {
+    -webkit-mask: url(../images/link.svg) no-repeat 50% 50%;
+    mask: url(../images/link.svg) no-repeat 50% 50%;
+  }
+  #iconoPdf {
+    -webkit-mask: url(../images/pdf.svg) no-repeat 50% 50%;
+    mask: url(../images/pdf.svg) no-repeat 50% 50%;
+  }
+#iconoEmail {
+    -webkit-mask: url(../images/Email.svg) no-repeat 50% 50%;
+    mask: url(../images/Email.svg) no-repeat 50% 50%;
+  }
+  #iconoLinkedin {
+    -webkit-mask: url(../images/Linkedin.svg) no-repeat 50% 50%;
+    mask: url(../images/Linkedin.svg) no-repeat 50% 50%;
+  }
+  #iconoGithub {
+    -webkit-mask: url(../images/Github.svg) no-repeat 50% 50%;
+    mask: url(../images/Github.svg) no-repeat 50% 50%;
+  }
+  #iconoWhatsapp {
+    -webkit-mask: url(../images/Whatsapp.svg) no-repeat 50% 50%;
+    mask: url(../images/Whatsapp.svg) no-repeat 50% 50%;
+  }
+  #iconoCodepen {
+    -webkit-mask: url(../images/codepen.svg) no-repeat 50% 50%;
+    mask: url(../images/codepen.svg) no-repeat 50% 50%;
+  }
+  #iconoUp {
+    -webkit-mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
+    mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
+  }

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url("fonts-size-root.css");
 @import url("animaciones.css");
+@import url("iconos.css");
 
 @font-face {
   font-family: "Roboto";
@@ -68,6 +69,7 @@ h3 {
   font-family: "Roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
 }
 h4 {
+  color: var(--primary-light-00);
   font-size: var(--size-h4);
   font-family: "Roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -142,19 +144,6 @@ nav {
   gap: 16px;
   border-radius: 20px;
 }
-#iconoColor {
-  -webkit-mask: url(../images/color.svg) no-repeat 0px 50%;
-  mask: url(../images/color.svg) no-repeat 0px 50%;
-  width: 32px;
-}
-#iconoDark {
-  -webkit-mask: url(../images/luna.svg) no-repeat 50% 50%;
-  mask: url(../images/luna.svg) no-repeat 50% 50%;
-}
-#iconoLight {
-  -webkit-mask: url(../images/sol.svg) no-repeat 50% 50%;
-  mask: url(../images/sol.svg) no-repeat 50% 50%;
-}
 .icono-svg {
   z-index: 22;
   height: 24px;
@@ -200,12 +189,12 @@ nav {
   border: 1px solid var(--text-color);
 }
 .punto3 {
-  background-color: #d571eb;
+  background-color: #ed8c1c;
   transform: rotate(16deg);
   border: 1px solid var(--text-color);
 }
 .punto4 {
-  background-color: #ed8c1c;
+  background-color: #d571eb;
   transform: rotate(48deg);
   border: 1px solid var(--text-color);
 }
@@ -242,7 +231,6 @@ nav {
   color: var(--primary-dark-20);
   font-size: 16vw;
   line-height: 100%;
-  transition: 1s;
 }
 /* #slider h1:hover {
   cursor: pointer;
@@ -258,7 +246,7 @@ nav {
   .soloTablet {
     display: block;
   }
-  #slider h1 {
+  #hero h1 {
     font-size: 17vw;
   }
 }
@@ -268,6 +256,7 @@ nav {
   }
   #slider h1 {
     font-size: 24vw;
+    transition: none;
   }
 }
 
@@ -408,23 +397,6 @@ section {
   height: 8px;
   border-radius: 50%;
 }
-#portfolio h3 {
-  margin: 0 5%;
-  text-align: center;
-  padding-bottom: 40px;
-  color: var(--secondary-light-00);
-}
-
-.textoPortfolio {
-  width: 80%;
-  margin: 0 auto;
-  padding-bottom: 50px;
-}
-
-#portfolio h4 {
-  margin: 20px 0;
-}
-
 .carrusel {
   width: 100%;
   height: 300px;
@@ -448,35 +420,77 @@ section {
   .carrusel img:last-child {
     padding-right: 5vw;
   }
+#portfolio h3 {
+  margin: 0 5%;
+  text-align: center;
+  padding-bottom: 40px;
+  color: var(--neutral-light-00);
+  font-style: italic;
+}
+.textoPortfolio {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+#portfolio h4 {
+  margin: 30px 0 20px 0;
+}
   .destacado {
-    color: var(--primary-light-00);
+    color: var(--secondary-light-00);
   }
   .botones {
     margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
   }
   .boton {
-    border-radius: 16px;
-    border: 1px solid var(--text-color);
-    padding: 6px 24px;
-    margin-right: 20px;
+    width: fit-content;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 18px;
+    border: 2px solid var(--text-color);
+    padding: 0 24px;
     color: var(--text-color);
+  }
+  .iconosportfolio {
+    height: 24px;
+    width: 24px;
+    background-color: var(--text-color);
+  }
+  .boton p {
+    margin: 0;
   }
   .boton:hover {
     color: var(--primary-light-00);
-    border: 1px solid var(--primary-light-00);
+    border: 2px solid var(--primary-light-00);
+  }
+  .boton:hover .iconosportfolio {
+    background-color: var(--primary-light-00);
   }
 .doscolumnas {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
+}
+#sobremi .doscolumnas {
+  grid-template-columns: 1fr 2fr;
+  width: 90%;
 }
 @media screen and (max-width: 768px) {
   .doscolumnas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+  #sobremi .doscolumnas {
+    grid-template-columns: 1fr;
+    width: 80%;
   }
 }
 .flexcentrado {
@@ -486,7 +500,7 @@ section {
   align-items: center;
 }
 .imgAlberto {
-  width: 60%;
+  width: 100%;
   margin-bottom: 20px;
   border-radius: 10px;
 }
@@ -497,9 +511,6 @@ section {
 .lista {
   margin: 0 40px;
 }
-/* .lista:first-child {
-    border-top: 2px solid var(--neutral-dark-10);
-} */
 .listado {
   padding: 16px;
   border-bottom: 2px solid var(--neutral-dark-10);
@@ -519,30 +530,6 @@ section {
 }
 .listado:hover a {
   color: var(--primary-light-10);
-}
-#iconoEmail {
-  -webkit-mask: url(../images/Email.svg) no-repeat 50% 50%;
-  mask: url(../images/Email.svg) no-repeat 50% 50%;
-}
-#iconoLinkedin {
-  -webkit-mask: url(../images/Linkedin.svg) no-repeat 50% 50%;
-  mask: url(../images/Linkedin.svg) no-repeat 50% 50%;
-}
-#iconoGithub {
-  -webkit-mask: url(../images/Github.svg) no-repeat 50% 50%;
-  mask: url(../images/Github.svg) no-repeat 50% 50%;
-}
-#iconoWhatsapp {
-  -webkit-mask: url(../images/Whatsapp.svg) no-repeat 50% 50%;
-  mask: url(../images/Whatsapp.svg) no-repeat 50% 50%;
-}
-#iconoCodepen {
-  -webkit-mask: url(../images/codepen.svg) no-repeat 50% 50%;
-  mask: url(../images/codepen.svg) no-repeat 50% 50%;
-}
-#iconoUp {
-  -webkit-mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
-  mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
 }
 .marco {
   border: 5px solid var(--primary-dark-00);
