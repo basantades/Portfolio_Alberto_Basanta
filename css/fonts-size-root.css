@@ -3,7 +3,7 @@
 @supports (font-size: clamp(1rem, 1vi, 1rem)) {
     :root {
           --size-p: clamp(0.9rem, 0.2vi + 0.9rem, 1rem);
-          --size-h5: clamp(1.1rem, 0.2vi + 1.1rem, 1.3rem);
+          --size-h5: clamp(1rem, 0.2vi + 1rem, 1.2rem);
           --size-h4: clamp(1.3rem, 0.4vi + 1.2rem, 1.6rem);
           --size-h3: clamp(1.5rem, 0.8vi + 1.3rem, 2rem);
           --size-h2: clamp(2.2rem, 2.5vi + 1.7rem, 3.8rem);
