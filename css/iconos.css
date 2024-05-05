@@ -39,6 +39,10 @@
     -webkit-mask: url(../images/codepen.svg) no-repeat 50% 50%;
     mask: url(../images/codepen.svg) no-repeat 50% 50%;
   }
+  #iconoFlechaLink {
+    -webkit-mask: url(../images/flechaLink.svg) no-repeat 50% 50%;
+    mask: url(../images/flechaLink.svg) no-repeat 50% 50%;
+  }
   #iconoUp {
     -webkit-mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
     mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
