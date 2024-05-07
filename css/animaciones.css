@@ -163,13 +163,33 @@
     animation-range: entry 0% cover 50%;
     animation-fill-mode: both;
   }
-  
+  @keyframes aparicionTexto {
+    0% {
+      opacity: 0;
+      font-size: 500px;   
+ }
+    100% {
+      opacity: 1;
+    }
+  }
+  .aparicionTexto {
+    animation: aparicionTexto 0.8s ease-in-out;
+  }
+  .aparicionTexto2 {
+    animation: fade 0.8s ease-in-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+  }
+
 @keyframes aparicionInferior {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(100%);
   }
-  to {
+  20% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -189,7 +209,7 @@
 
       transform: translateX(-100%) scaleX(20%);
     }
-    49% {
+    40% {
       opacity: 0;
     }
     50% {
@@ -227,3 +247,19 @@
   .animacionFlechaLink {
     animation: animacionFlechaLink 0.8s ease-in-out;
  }
+
+ @keyframes cambioColor {
+  0% {
+    color: var(--txt-color);
+  }
+  50% {
+    color: var(--primary-light-00);
+  }
+  100% {
+    color: var(--txt-color);
+  }
+}
+
+.cambioColor {
+  animation: cambioColor 0.2s infinite ease-in-out;
+}
