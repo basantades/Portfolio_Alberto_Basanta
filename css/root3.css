@@ -2,9 +2,9 @@
     --primary-light-00: #ed8c1c;
     --primary-light-10: #f1a946;
     --primary-light-20: #f6ca7b;
-    --primary-dark-00: #df7517;
-    --primary-dark-10: #b95a15;
-    --primary-dark-20: #934619;
+    --primary-dark-00: #ee8529;
+    --primary-dark-10: #df6717;
+    --primary-dark-20: #b94e15;
     --secondary-light-00: #f09179;
     --secondary-light-10: #f7baaa;
     --secondary-light-20: #fbd6cd;
@@ -24,9 +24,9 @@
     --highlight-color: #ffde7d;
     }
 :root.light {
-    --primary-light-00: #df7517;
-    --primary-light-10: #b95a15;
-    --primary-light-20: #934619;
+    --primary-light-00: #ee8529;
+    --primary-light-10: #df6717;
+    --primary-light-20: #b94e15;
     --primary-dark-00: #ed8c1c;
     --primary-dark-10: #f1a946;
     --primary-dark-20: #f6ca7b;
@@ -44,7 +44,7 @@
     --neutral-dark-20: #F7F8F8;
     --bg-color: #ffffff;
     --text-color: #212026;
-    --gradient: linear-gradient(300deg, #e56c4e 0%, #df7517 60%, #ffde7d 100%);
-    --gradient-color: #df7517;
+    --gradient: linear-gradient(300deg, #e56c4e 0%, #ee8529 60%, #ffde7d 100%);
+    --gradient-color: #ee8529;
     --highlight-color: #ffde7d;
     }

@@ -5,6 +5,9 @@ let punto1 = document.querySelector('.punto1');
 let punto2 = document.querySelector('.punto2');
 let punto3 = document.querySelector('.punto3');
 let punto4 = document.querySelector('.punto4');
+let textoHero = document.querySelector('.textHero');
+const contenidoTextoHero = textoHero.innerHTML;
+
 
 // Funcion para cambio de root
 function changeColor() {
@@ -26,6 +29,8 @@ function changeColor() {
         punto1.classList.remove('actual');
         punto2.classList.add('actual');
     }
+    textoHero.innerHTML = '';
+    textoHero.innerHTML = contenidoTextoHero;
 }
 
 // Event listener para cambio de root
@@ -48,6 +53,8 @@ function changeTheme() {
         iconoDark.classList.add('ocultar');
         iconoLight.classList.remove('ocultar');
     }
+    textoHero.innerHTML = '';
+    textoHero.innerHTML = contenidoTextoHero;
 }
 
 // Event listener para cambio claro-oscuro
