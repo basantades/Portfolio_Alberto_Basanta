@@ -93,6 +93,12 @@
       transform: translate(-100%, 0);
     }
   }
+  .movimientoMarquesina {
+    animation: desplazartexto 18s linear infinite;
+  }
+  .movimientoMarquesina:hover {
+    animation-play-state: paused;
+  }
   
   @keyframes ampliar-rebote {
     0% {
@@ -174,7 +180,16 @@
       scale: 100%;
     }
   }
-
+  .elementos-aparicion {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+  
+    animation-timeline: --image;
+    animation-name: aparicion;
+  
+    animation-range: entry 100% cover 25%;
+    animation-fill-mode: both;
+  }
   .img-aparicion {
     view-timeline-name: --image;
     view-timeline-axis: block;
@@ -232,9 +247,33 @@
     animation-timeline: --titular;
     animation-name: fade;
   
-    animation-range: entry 0% cover 50%;
+    animation-range: entry 50% cover 50%;
     animation-fill-mode: both;
   }
+
+  
+  @keyframes desaparicionsuperior {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+  .desaparicionsuperior {
+    view-timeline-name: --imagen;
+    view-timeline-axis: block;
+  
+    animation-timeline: --imagen;
+    animation-name: desaparicionsuperior;
+  
+    animation-range: entry 0% cover 150%;
+    animation-fill-mode: both;
+  }
+
   @keyframes aparicionTexto {
     0% {
       opacity: 0;

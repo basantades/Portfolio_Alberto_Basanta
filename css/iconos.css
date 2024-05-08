@@ -1,49 +1,61 @@
 #iconoColor {
-    -webkit-mask: url(../images/color.svg) no-repeat 0px 50%;
-    mask: url(../images/color.svg) no-repeat 0px 50%;
+    -webkit-mask: url(../images/iconos/color.svg) no-repeat 0px 50%;
+    mask: url(../images/iconos/color.svg) no-repeat 0px 50%;
     width: 32px;
   }
   #iconoDark {
-    -webkit-mask: url(../images/luna.svg) no-repeat 50% 50%;
-    mask: url(../images/luna.svg) no-repeat 50% 50%;
+    -webkit-mask: url(../images/iconos/luna.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/luna.svg) no-repeat 50% 50%;
   }
   #iconoLight {
-    -webkit-mask: url(../images/sol.svg) no-repeat 50% 50%;
-    mask: url(../images/sol.svg) no-repeat 50% 50%;
+    -webkit-mask: url(../images/iconos/sol.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/sol.svg) no-repeat 50% 50%;
   }
-  #iconoLink {
-    -webkit-mask: url(../images/link.svg) no-repeat 50% 50%;
-    mask: url(../images/link.svg) no-repeat 50% 50%;
+  .flechaDown {
+    -webkit-mask: url(../images/flechaDown.svg) no-repeat 50% 50%;
+    mask: url(../images/flechaDown.svg) no-repeat 50% 50%;
   }
-  #iconoPdf {
-    -webkit-mask: url(../images/pdf.svg) no-repeat 50% 50%;
-    mask: url(../images/pdf.svg) no-repeat 50% 50%;
+  .iconoLink {
+    -webkit-mask: url(../images/iconos/link.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/link.svg) no-repeat 50% 50%;
   }
-#iconoEmail {
-    -webkit-mask: url(../images/Email.svg) no-repeat 50% 50%;
-    mask: url(../images/Email.svg) no-repeat 50% 50%;
+  .iconoPdf {
+    -webkit-mask: url(../images/iconos/pdf.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/pdf.svg) no-repeat 50% 50%;
   }
-  #iconoLinkedin {
-    -webkit-mask: url(../images/Linkedin.svg) no-repeat 50% 50%;
-    mask: url(../images/Linkedin.svg) no-repeat 50% 50%;
+
+.iconoAdobe {
+    -webkit-mask: url(../images/iconos/adobe.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/adobe.svg) no-repeat 50% 50%;
   }
-  #iconoGithub {
-    -webkit-mask: url(../images/Github.svg) no-repeat 50% 50%;
-    mask: url(../images/Github.svg) no-repeat 50% 50%;
+
+
+
+.iconoEmail {
+    -webkit-mask: url(../images/iconos/Email.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/Email.svg) no-repeat 50% 50%;
   }
-  #iconoWhatsapp {
-    -webkit-mask: url(../images/Whatsapp.svg) no-repeat 50% 50%;
-    mask: url(../images/Whatsapp.svg) no-repeat 50% 50%;
+  .iconoLinkedin {
+    -webkit-mask: url(../images/iconos/Linkedin.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/Linkedin.svg) no-repeat 50% 50%;
   }
-  #iconoCodepen {
-    -webkit-mask: url(../images/codepen.svg) no-repeat 50% 50%;
-    mask: url(../images/codepen.svg) no-repeat 50% 50%;
+  .iconoGithub {
+    -webkit-mask: url(../images/iconos/Github.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/Github.svg) no-repeat 50% 50%;
   }
-  #iconoFlechaLink {
-    -webkit-mask: url(../images/flechaLink.svg) no-repeat 50% 50%;
-    mask: url(../images/flechaLink.svg) no-repeat 50% 50%;
+  .iconoWhatsapp {
+    -webkit-mask: url(../images/iconos/Whatsapp.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/Whatsapp.svg) no-repeat 50% 50%;
   }
-  #iconoUp {
-    -webkit-mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
-    mask: url(../images/ArrowUp.svg) no-repeat 50% 50%;
+  .iconoCodepen {
+    -webkit-mask: url(../images/iconos/codepen.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/codepen.svg) no-repeat 50% 50%;
+  }
+  .iconoFlechaLink {
+    -webkit-mask: url(../images/iconos/flechaLink.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/flechaLink.svg) no-repeat 50% 50%;
+  }
+  .iconoUp {
+    -webkit-mask: url(../images/iconos/ArrowUp.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/ArrowUp.svg) no-repeat 50% 50%;
   }

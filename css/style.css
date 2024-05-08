@@ -302,8 +302,6 @@ nav {
   padding: 0 10%;
 }
 .flechaDown {
-  -webkit-mask: url(../images/flechaDown.svg) no-repeat 50% 50%;
-  mask: url(../images/flechaDown.svg) no-repeat 50% 50%;
   height: 60px;
   width: 80px;
   background-color: var(--primary-dark-20);
@@ -317,26 +315,8 @@ nav {
 .flechaDown:hover{
     background-color: var(--text-color);
 }
-
-#destacados {
-  position: relative;
-  overflow: hidden;
-  padding-top: 50px;
-  margin: 0;
-  height: 200px;
-}
-#destacados h2 {
-  position: absolute;
-  color: var(--neutral-dark-10);
-  font-size: 100px;
-  white-space: nowrap;
-  animation: desplazartexto 18s linear infinite;
-}
-#destacados h2:hover {
-  animation-play-state: paused;
-}
 section {
-    margin: 50px 0;
+    margin: 50px auto;
   }
 .titular h2{
   text-transform: uppercase;
@@ -396,7 +376,7 @@ section {
   padding-bottom: 50px;
 }
 #portfolio h4 {
-  margin: 30px 0 20px 0;
+  margin: 30px 0 10px 0;
 }
   .destacado {
     color: var(--secondary-light-00);
@@ -455,7 +435,6 @@ section {
   gap: 40px;
 }
 #sobremi{
-  padding-bottom: 40px;
   scroll-margin-top: 50px;
 }
 #sobremi .doscolumnas {
@@ -514,6 +493,44 @@ section {
   width: fit-content;
   margin: 20px 0;
 }
+
+#habilidades{
+  background-color: var(--secondary-dark-00);
+padding: 30px 5%;
+width: 90%;
+}
+#habilidades h3 {
+  color: var(--white);
+  text-align: center;
+  padding-bottom: 20px;
+  flex-direction: column;
+}
+.listahabilidades {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--white);
+}
+.card {
+  width: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.iconoshabilidades{
+  transition: 1s;
+  height: 24px;
+  width: 24px;
+  background-color: var(--white);
+  opacity: 60%;
+}
+.ampliacion3 {
+  transform: scale(3);
+  margin: 24px;
+}
 #contacto {
   scroll-margin-top: 50px;
 }
@@ -538,21 +555,30 @@ section {
   justify-content: start;
   gap: 10px;
 }
-
-.listado .iconoscontacto:last-child {
+.iconoscontacto {
+  transition: 1s;
+  height: 36px;
+  width: 36px;
+  transform: scale(1.5);
+  background-color: var(--text-color);
+}
+.listado a:hover .iconoscontacto {
+  background-image: var(--gradient);
+}
+.listado .iconos:last-child {
   margin-left: auto;
   display: none;
 }
-.listado a:hover .iconoscontacto:last-child {
+.listado a:hover .iconos:last-child {
   display: block;
 }
-.iconoscontacto {
+.iconos {
   transition: 1s;
   height: 24px;
   width: 24px;
   background-color: var(--text-color);
 }
-.listado a:hover .iconoscontacto {
+.listado a:hover .iconos {
   background-image: var(--gradient);
 }
 .listado a:hover {
@@ -639,7 +665,7 @@ footer {
 footer p {
   font-size: calc(var(--size-p) * 0.75);
 }
-footer a:hover .iconoscontacto {
+footer a:hover .iconos {
   background-image: var(--gradient);
 }
 .ocultar {
