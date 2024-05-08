@@ -87,6 +87,10 @@ p {
 .bold {
   font-family: "Roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
 }
+strong {
+  font-weight: normal;
+  font-family: "Roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
+}
 a {
   text-decoration: none;
   color: var(--text-color);
@@ -259,9 +263,6 @@ nav {
   }
   .end {
     line-height: 0px;
-  }
-  .guion {
-    /* color: #ed8c1c; */
   }
   .guion::before {
     content: "————————";
