@@ -20,8 +20,8 @@
     mask: url(../images/iconos/sol.svg) no-repeat 50% 50%;
   }
   .flechaDown {
-    -webkit-mask: url(../images/flechaDown.svg) no-repeat 50% 50%;
-    mask: url(../images/flechaDown.svg) no-repeat 50% 50%;
+    -webkit-mask: url(../images/iconos/flechaDown.svg) no-repeat 50% 50%;
+    mask: url(../images/iconos/flechaDown.svg) no-repeat 50% 50%;
   }
   .iconoLink {
     -webkit-mask: url(../images/iconos/link.svg) no-repeat 50% 50%;

@@ -75,10 +75,14 @@ function abrirMenu() {
 }
 function cerrarMenu() {
     desplegableMenu.classList.add('ocultar');
-    iconoMenuClose.classList.add('ocultar');
     iconoMenu.classList.remove('ocultar');
+    iconoMenuClose.classList.add('ocultar');
 }
 
-// Event listener para abrir menu
+// Event listener para abrir y cerrar menu
 iconoMenu.addEventListener('click', abrirMenu);
 iconoMenuClose.addEventListener('click', cerrarMenu);
+
+window.addEventListener('scroll', () => {
+    cerrarMenu();
+});

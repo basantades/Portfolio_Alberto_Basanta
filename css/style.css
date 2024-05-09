@@ -130,6 +130,27 @@ header {
 .normal {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
+@media screen and (max-width: 380px) {
+  .nombreGrande {
+    display: none;
+  }
+}
+@media screen and (min-width: 381px) {
+  .nombreMediano {
+    display: none;
+  }
+}
+@media screen and (max-width: 280px) {
+  .nombreMediano {
+    display: none;
+  }
+}
+@media screen and (min-width: 281px) {
+  .nombrePequeno {
+    display: none;
+  }
+}
+
 nav {
   display: flex;
   gap: 30px;
@@ -160,9 +181,41 @@ nav .menu a.active {
   }
 }
 @media screen and (max-width: 600px) {
-
   header {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 300px) {
+  header {
+    gap: 10px;
+  }
+}
+.desplegableMenu {
+  transition: 0.5s ease-out;
+  background-color: var(--neutral-dark-20);
+  width: 100%;
+  height: 68px;
+  padding: 10px 4%;
+  position: fixed;
+  top: 68px;
+  right: 0px;
+  z-index: 9;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (min-width: 601px) {
+  .desplegableMenu {
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  .desplegableMenu {
+    flex-direction: column;
+    gap: 10px;
+    height: 100px;
   }
 }
 #selectorColores {
@@ -332,7 +385,6 @@ nav .menu a.active {
   bottom: 0;
   transform: translateX(-50%);
   z-index: 6;
-
 }
 .flechaDown:hover{
     background-color: var(--text-color);
