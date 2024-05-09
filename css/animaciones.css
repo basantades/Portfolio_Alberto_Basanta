@@ -81,9 +81,20 @@
       opacity: 100%;
     }
   }
-  .animate-fade {
-    animation: aparecer 1s ease-out;
+  .animate-fadezoom {
+    animation: aparecer 0.5s ease-out;
     animation-fill-mode: both;
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+  .animate-fade {
+    animation: fade 1s ease-in-out;
   }
   
   @keyframes desplazartexto {
@@ -304,16 +315,16 @@
     }
   }
   .animacionfadeDown {
-    animation: fadeDown 0.8s ease-in-out;
+    animation: fadeDown 0.4s ease-in-out;
   }
   .animacionfadeDown2 {
-    animation: fadeDown 0.8s ease-in-out;
-    animation-delay: 0.4s;
+    animation: fadeDown 0.4s ease-in-out;
+    animation-delay: 0.2s;
     animation-fill-mode: both;
   }
   .animacionfadeDown3 {
-    animation: fadeDown 0.8s ease-in-out;
-    animation-delay: 0.8s;
+    animation: fadeDown 0.4s ease-in-out;
+    animation-delay: 0.4s;
     animation-fill-mode: both;
   }
   @keyframes desaparicionsuperior {
@@ -436,4 +447,35 @@
 }
 .cambioColor {
   animation: cambioColor 0.2s infinite ease-in-out;
+}
+
+@keyframes animacionEsconderMenu {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+    z-index: -1;
+    display: none;
+  }
+}
+.animacionEsconderMenu {
+  animation: animacionEsconderMenu 0.4s ease-in-out forwards;
+}
+
+@keyframes animacionAparecerMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    z-index: 9;
+  }
+}
+.animacionAparecerMenu {
+  animation: animacionAparecerMenu 0.4s ease-in-out forwards;
 }

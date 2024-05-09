@@ -70,11 +70,14 @@ let desplegableMenu = document.getElementById('desplegableMenu');
 // Funcion para abrir menu
 function abrirMenu() {
     desplegableMenu.classList.remove('ocultar');
+    desplegableMenu.classList.remove('animacionEsconderMenu');
+    desplegableMenu.classList.add('animacionAparecerMenu');
     iconoMenu.classList.add('ocultar');
     iconoMenuClose.classList.remove('ocultar');
 }
 function cerrarMenu() {
-    desplegableMenu.classList.add('ocultar');
+    desplegableMenu.classList.remove('animacionAparecerMenu');
+    desplegableMenu.classList.add('animacionEsconderMenu');
     iconoMenu.classList.remove('ocultar');
     iconoMenuClose.classList.add('ocultar');
 }
