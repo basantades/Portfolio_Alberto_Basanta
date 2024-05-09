@@ -72,300 +72,299 @@
   transform-origin: -100% -120%;
 }
 @keyframes aparecer {
-    0% {
-      transform: scale(20%);
-      opacity: 0%;
-    }
-    100% {
-      transform: scale(100%);
-      opacity: 100%;
-    }
+  0% {
+    transform: scale(20%);
+    opacity: 0%;
   }
-  .animate-fadezoom {
-    animation: aparecer 0.5s ease-out;
-    animation-fill-mode: both;
+  100% {
+    transform: scale(100%);
+    opacity: 100%;
   }
-  @keyframes fade {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
+}
+.animate-fadezoom {
+  animation: aparecer 0.5s ease-out;
+  animation-fill-mode: both;
+}
+@keyframes fade {
+  0% {
+    opacity: 0%;
   }
-  .animate-fade {
-    animation: fade 1s ease-in-out;
+  100% {
+    opacity: 100%;
   }
-  
-  @keyframes desplazartexto {
-    0% {
-      transform: translate(100vw, 0);
-    }
-    100% {
-      transform: translate(-100%, 0);
-    }
-  }
-  .movimientoMarquesina {
-    animation: desplazartexto 18s linear infinite;
-  }
-  .movimientoMarquesina:hover {
-    animation-play-state: paused;
-  }
-  
-  @keyframes ampliar-rebote {
-    0% {
-      transform: scale(40%);
-    }
-    80% {
-      transform: scale(110%);
-    }
-    100% {
-      transform: scale(100%);
-    }
-  }
-  .animate-movimiento-rebote {
-    view-timeline-name: --rebote;
-    view-timeline-axis: block;
-  
-    animation-timeline: --rebote;
-    animation-name: ampliar-rebote;
-  
-    animation-range: entry 0% cover 50%;
-    animation-fill-mode: none;
-  }
-  
-  @keyframes rotar {
-    0% {
-      transform: rotate(0deg);
-      opacity: 0.5;
-    }
-    50% {
-      transform: rotate(50deg) scale(0.5);
-      opacity: 0.9;
-    }
-    100% {
-      transform: rotate(0deg);
-      opacity: 0.5;
-    }
-  }
-  
-  @keyframes gradient {
-    60% {
-      transform: scale(1.5) translate(-70%, -20%);
-    }
-  }
-  
-  @keyframes rotacioninfinita {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  @keyframes aparicion {
-    0% {
-      opacity: 0;
-      scale: 20%;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-      scale: 100%;
-    }
-  }
-  @keyframes aparicionMarco {
-    0% {
-      opacity: 0;
-      scale: 20%;
-    }
-    30% {
-      opacity: 0;
-      scale: 20%;
-    }
-  
-    100% {
-      opacity: 1;
-      scale: 100%;
-    }
-  }
-  .elementos-aparicion {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-  
-    animation-timeline: --image;
-    animation-name: aparicion;
-  
-    animation-range: entry 100% cover 25%;
-    animation-fill-mode: both;
-  }
-  .img-aparicion {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-  
-    animation-timeline: --image;
-    animation-name: aparicion;
-  
-    animation-range: entry 25% cover 40%;
-    animation-fill-mode: both;
-  }
-  .animacion-marcos {
-    view-timeline-name: --marcos;
-    view-timeline-axis: block;
-  
-    animation-timeline: --marcos;
-    animation-name: aparicionMarco;
-  
-    animation-range: entry 30% cover 50%;
-    animation-fill-mode: both;
-  }
-  @keyframes aparicionCards {
-    0% {
-      scale: 20%;
-      transform: translateY(100%);
-    }
-    100% {
-      scale: 100%;
-      transform: translateY(0%);
+}
+.animate-fade {
+  animation: fade 1s ease-in-out;
+}
 
-    }
+@keyframes desplazartexto {
+  0% {
+    transform: translate(100vw, 0);
   }
-  .aparicionCards {
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-  
-    animation-timeline: --image;
-    animation-name: aparicionCards;
-  
-    animation-range: entry 25% cover 40%;
-    animation-fill-mode: both;
+  100% {
+    transform: translate(-100%, 0);
   }
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+}
+.movimientoMarquesina {
+  animation: desplazartexto 18s linear infinite;
+}
+.movimientoMarquesina:hover {
+  animation-play-state: paused;
+}
+
+@keyframes ampliar-rebote {
+  0% {
+    transform: scale(40%);
   }
-  
-  @keyframes aparicionfilete {
-    from {
-      transform: scaleX(0);
-    }
-    to {
-      transform: scaleX(1);
-    }
+  80% {
+    transform: scale(110%);
   }
-  .aparicionfilete {
-    view-timeline-name: --filete;
-    view-timeline-axis: block;
-  
-    animation-timeline: --filete;
-    animation-name: aparicionfilete;
-  
-    animation-range: entry 50% cover 50%;
-    animation-fill-mode: both;
+  100% {
+    transform: scale(100%);
+  }
+}
+.animate-movimiento-rebote {
+  view-timeline-name: --rebote;
+  view-timeline-axis: block;
+
+  animation-timeline: --rebote;
+  animation-name: ampliar-rebote;
+
+  animation-range: entry 0% cover 50%;
+  animation-fill-mode: none;
+}
+
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.5;
+  }
+  50% {
+    transform: rotate(50deg) scale(0.5);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 0.5;
+  }
+}
+
+@keyframes gradient {
+  60% {
+    transform: scale(1.5) translate(-70%, -20%);
+  }
+}
+
+@keyframes rotacioninfinita {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes aparicion {
+  0% {
+    opacity: 0;
+    scale: 20%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+@keyframes aparicionMarco {
+  0% {
+    opacity: 0;
+    scale: 20%;
+  }
+  30% {
+    opacity: 0;
+    scale: 20%;
   }
 
-  .animacionFade {
-    view-timeline-name: --titular;
-    view-timeline-axis: block;
-  
-    animation-timeline: --titular;
-    animation-name: fade;
-  
-    animation-range: entry 50% cover 50%;
-    animation-fill-mode: both;
+  100% {
+    opacity: 1;
+    scale: 100%;
   }
-  @keyframes fadeUp {
-    from {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0%);
-    }
+}
+.elementos-aparicion {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: aparicion;
+
+  animation-range: entry 100% cover 25%;
+  animation-fill-mode: both;
+}
+.img-aparicion {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: aparicion;
+
+  animation-range: entry 25% cover 40%;
+  animation-fill-mode: both;
+}
+.animacion-marcos {
+  view-timeline-name: --marcos;
+  view-timeline-axis: block;
+
+  animation-timeline: --marcos;
+  animation-name: aparicionMarco;
+
+  animation-range: entry 30% cover 50%;
+  animation-fill-mode: both;
+}
+@keyframes aparicionCards {
+  0% {
+    scale: 20%;
+    transform: translateY(100%);
   }
-  .aparicionFadeUp {
-    view-timeline-name: --titular;
-    view-timeline-axis: block;
-  
-    animation-timeline: --titular;
-    animation-name: fadeUp;
-  
-    animation-range: entry 10% cover 40%;
-    animation-fill-mode: both;
+  100% {
+    scale: 100%;
+    transform: translateY(0%);
   }
-  @keyframes fadeDown {
-    from {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  .animacionfadeDown {
-    animation: fadeDown 0.4s ease-in-out;
-  }
-  .animacionfadeDown2 {
-    animation: fadeDown 0.4s ease-in-out;
-    animation-delay: 0.2s;
-    animation-fill-mode: both;
-  }
-  .animacionfadeDown3 {
-    animation: fadeDown 0.4s ease-in-out;
-    animation-delay: 0.4s;
-    animation-fill-mode: both;
-  }
-  @keyframes desaparicionsuperior {
-    0% {
-      transform: translateY(0%);
-    }
-    50% {
-      transform: translateY(0%);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
-  }
-  .desaparicionsuperior {
-    view-timeline-name: --imagen;
-    view-timeline-axis: block;
-  
-    animation-timeline: --imagen;
-    animation-name: desaparicionsuperior;
-  
-    animation-range: entry 0% cover 150%;
-    animation-fill-mode: both;
+}
+.aparicionCards {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: aparicionCards;
+
+  animation-range: entry 25% cover 40%;
+  animation-fill-mode: both;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
   }
 
-  @keyframes aparicionTexto {
-    0% {
-      opacity: 0;
-      font-size: 500px;   
- }
-    100% {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  .aparicionTexto {
-    animation: aparicionTexto 0.8s ease-in-out;
+}
+
+@keyframes aparicionfilete {
+  from {
+    transform: scaleX(0);
   }
-  .aparicionTexto2 {
-    animation: fade 0.8s ease-in-out;
-    animation-delay: 0.8s;
-    animation-fill-mode: both;
+  to {
+    transform: scaleX(1);
   }
+}
+.aparicionfilete {
+  view-timeline-name: --filete;
+  view-timeline-axis: block;
+
+  animation-timeline: --filete;
+  animation-name: aparicionfilete;
+
+  animation-range: entry 50% cover 50%;
+  animation-fill-mode: both;
+}
+
+.animacionFade {
+  view-timeline-name: --titular;
+  view-timeline-axis: block;
+
+  animation-timeline: --titular;
+  animation-name: fade;
+
+  animation-range: entry 50% cover 50%;
+  animation-fill-mode: both;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.aparicionFadeUp {
+  view-timeline-name: --titular;
+  view-timeline-axis: block;
+
+  animation-timeline: --titular;
+  animation-name: fadeUp;
+
+  animation-range: entry 10% cover 40%;
+  animation-fill-mode: both;
+}
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+.animacionfadeDown {
+  animation: fadeDown 0.4s ease-in-out;
+}
+.animacionfadeDown2 {
+  animation: fadeDown 0.4s ease-in-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+.animacionfadeDown3 {
+  animation: fadeDown 0.4s ease-in-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}
+@keyframes desaparicionsuperior {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.desaparicionsuperior {
+  view-timeline-name: --imagen;
+  view-timeline-axis: block;
+
+  animation-timeline: --imagen;
+  animation-name: desaparicionsuperior;
+
+  animation-range: entry 0% cover 150%;
+  animation-fill-mode: both;
+}
+
+@keyframes aparicionTexto {
+  0% {
+    opacity: 0;
+    font-size: 500px;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.aparicionTexto {
+  animation: aparicionTexto 0.8s ease-in-out;
+}
+.aparicionTexto2 {
+  animation: fade 0.8s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
 
 @keyframes aparicionInferior {
   0% {
@@ -388,53 +387,53 @@
   animation-delay: 1s;
   animation-fill-mode: both;
 }
-  
-  @keyframes animacionFlechaLink {
-    0% {
-      opacity: 0;
 
-      transform: translateX(-100%) scaleX(20%);
-    }
-    40% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateX(-100%) scaleX(20%);
-    }
-    60% {
-      transform: translateX(0) scaleX(100%);
-    }
-    70% {
-      transform: translateX(0) scaleX(100%);
-    }
-    80% {
-      transform: translateX(100%) scaleX(20%);
-    }
-    81% {
-      opacity: 1;
-    }
-   82% {
-      opacity: 0;
-    }
-    83% {
-      opacity: 0;
-      transform: translateX(-100%) scaleX(20%);
-    }
-    90% {
-      opacity: 1;
-      transform: translateX(-100%) scaleX(20%);
-    }
-    100% {
-      transform: translateX(0) scaleX(100%);
-    }
+@keyframes animacionFlechaLink {
+  0% {
+    opacity: 0;
+
+    transform: translateX(-100%) scaleX(20%);
   }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(-100%) scaleX(20%);
+  }
+  60% {
+    transform: translateX(0) scaleX(100%);
+  }
+  70% {
+    transform: translateX(0) scaleX(100%);
+  }
+  80% {
+    transform: translateX(100%) scaleX(20%);
+  }
+  81% {
+    opacity: 1;
+  }
+  82% {
+    opacity: 0;
+  }
+  83% {
+    opacity: 0;
+    transform: translateX(-100%) scaleX(20%);
+  }
+  90% {
+    opacity: 1;
+    transform: translateX(-100%) scaleX(20%);
+  }
+  100% {
+    transform: translateX(0) scaleX(100%);
+  }
+}
 
-  .animacionFlechaLink {
-    animation: animacionFlechaLink 0.8s ease-in-out;
- }
+.animacionFlechaLink {
+  animation: animacionFlechaLink 0.8s ease-in-out;
+}
 
- @keyframes cambioColor {
+@keyframes cambioColor {
   0% {
     color: var(--txt-color);
   }
