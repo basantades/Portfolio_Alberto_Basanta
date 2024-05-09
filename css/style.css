@@ -122,54 +122,49 @@ header {
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 .black {
   font-family: "Roboto-black", Verdana, Geneva, Tahoma, sans-serif;
 }
+.normal {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
 nav {
   display: flex;
   gap: 30px;
+}
+nav .menu a {
   font-size: var(--size-p);
+  font-family: "Roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+nav .menu a:hover {
+  color: var(--primary-light-10);
 }
 nav .menu a.active {
   transition: 1s;
-  color: var(--primary-light-00);
+  color: var(--primary-light-10);
+}
+@media screen and (min-width: 601px) {
+  .soloMovil {
+  display: none;
+  }
 }
 @media screen and (max-width: 600px) {
-  nav {
+  .soloMovil {
+    display: block;
+  }
+  nav{
     display: none;
   }
 }
 @media screen and (max-width: 600px) {
+
   header {
     gap: 20px;
   }
 }
-/* #menuModal {
-  opacity: 50%;
-position: fixed;
-z-index: 99;
-width: 100%;
-height: 100vh;
-background-color: var(--bg-color);
-}
-.cierre {
-  width: 100%;
-  height: 68px;
-  padding: 10px 4%;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-}
-.centradoColumn {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-} */
 #selectorColores {
   transition: 0.5s ease-out;
   background-color: var(--text-color);
@@ -280,10 +275,6 @@ background-color: var(--bg-color);
   line-height: 90%;
   font-size: 15vw;
 }
-.soloMovil {
-  display: none;
-}
-
 .soloTablet {
   display: none;
 }
@@ -303,9 +294,7 @@ background-color: var(--bg-color);
   }
 }
 @media (max-width: 600px) {
-  .soloMovil {
-    display: block;
-  }
+
   .textHero {
     padding-bottom: 70px;
   }

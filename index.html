@@ -10,21 +10,21 @@
 </head>
 <body>
 <div id="wrapper">
-    <div id="menuMovil">
-            <div id="iconoMenuClose" class="iconos soloMovil animate-fade"></div> 
-            <div class="menu"><a href="#portfolio">portfolio</a></div>
-            <div class="menu"><a href="#sobremi">sobre mi</a></div>
-            <div class="menu"><a href="#contacto">contacto</a></div>
-    </div>
     <header>
-        <div id="iconoMenu" class="iconos soloMovil animate-fade"></div>
-        <h4 class="textoDegradado black">Alberto {Basanta}</h4>
+        <div id="iconoMenuClose" class="iconos animate-fade soloMovil ocultar"></div> 
+        <div id="iconoMenu" class="iconos soloMovil animate-fade "></div>
+        <h4 id="nombre" class="textoDegradado black">Alberto <span class="normal">{</span>Basanta<span class="normal">}</span></h4>
         <nav>
-            <div class="menu"><a href="#portfolio">portfolio</a></div>
-            <div class="menu"><a href="#sobremi">sobre mi</a></div>
-            <div class="menu"><a href="#contacto">contacto</a></div>
+            <div class="menu animacionFadeUp"><a href="#portfolio">Portfolio</a></div>
+            <div class="menu animacionFadeUp2"><a href="#sobremi">Sobre mi</a></div>
+            <div class="menu animacionFadeUp3"><a href="#contacto">Contacto</a></div>
         </nav> 
     </header>
+    <div id="desplegableMenu" class="ocultar soloMovil">
+        <div class="menu animacionFadeUp"><a href="#portfolio">Portfolio</a></div>
+        <div class="menu animacionFadeUp2"><a href="#sobremi">Sobre mi</a></div>
+        <div class="menu animacionFadeUp3"><a href="#contacto">Contacto</a></div>
+    </div> 
     <div id="selectorColores">
         <div id="iconoLight" class="icono-svg"></div>
         <div id="iconoDark" class="icono-svg ocultar"></div>
@@ -44,7 +44,7 @@
         <div class="titular animacionFade"><h2>Portfolio</h2></div>
         <div class="filete aparicionfilete"></div>
         <article>
-    <div class="carrusel animacionFadeUp">
+    <div class="carrusel aparicionFadeUp">
         <div class="interiorCarrusel">
             <img src="images/juego-pokemon.webp" alt="portfolio juego Pokemon">
         </div>
@@ -60,7 +60,7 @@
     </div></div>
         </article>
         <article>
-            <div class="carrusel animacionFadeUp">
+            <div class="carrusel aparicionFadeUp">
         <div class="interiorCarrusel">
             <img src="images/fabtextil.webp" alt="web fabtextil en WordPress">
         </div>

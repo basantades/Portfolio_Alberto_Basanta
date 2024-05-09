@@ -282,7 +282,7 @@
       transform: translateY(0%);
     }
   }
-  .animacionFadeUp {
+  .aparicionFadeUp {
     view-timeline-name: --titular;
     view-timeline-axis: block;
   
@@ -292,7 +292,21 @@
     animation-range: entry 10% cover 40%;
     animation-fill-mode: both;
   }
+  .animacionFadeUp {
+    animation: fadeUp 0.8s ease-in-out;
+  }
+  .animacionFadeUp2 {
+    animation: fadeUp 0.8s ease-in-out;
+    animation-delay: 0.4s;
+    animation-fill-mode: both;
 
+  }
+  .animacionFadeUp3 {
+    animation: fadeUp 0.8s ease-in-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: both;
+
+  }
   
   @keyframes desaparicionsuperior {
     0% {

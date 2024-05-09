@@ -60,3 +60,25 @@ function changeTheme() {
 // Event listener para cambio claro-oscuro
 iconoLight.addEventListener('click', changeTheme);
 iconoDark.addEventListener('click', changeTheme);
+
+
+// Nodos para cambio menu movil
+let iconoMenu = document.getElementById('iconoMenu');
+let iconoMenuClose = document.getElementById('iconoMenuClose');
+let desplegableMenu = document.getElementById('desplegableMenu');
+
+// Funcion para abrir menu
+function abrirMenu() {
+    desplegableMenu.classList.remove('ocultar');
+    iconoMenu.classList.add('ocultar');
+    iconoMenuClose.classList.remove('ocultar');
+}
+function cerrarMenu() {
+    desplegableMenu.classList.add('ocultar');
+    iconoMenuClose.classList.add('ocultar');
+    iconoMenu.classList.remove('ocultar');
+}
+
+// Event listener para abrir menu
+iconoMenu.addEventListener('click', abrirMenu);
+iconoMenuClose.addEventListener('click', cerrarMenu);
