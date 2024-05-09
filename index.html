@@ -10,12 +10,19 @@
 </head>
 <body>
 <div id="wrapper">
+    <div id="menuMovil">
+            <div id="iconoMenuClose" class="iconos soloMovil animate-fade"></div> 
+            <div class="menu"><a href="#portfolio">portfolio</a></div>
+            <div class="menu"><a href="#sobremi">sobre mi</a></div>
+            <div class="menu"><a href="#contacto">contacto</a></div>
+    </div>
     <header>
-        <h4 class="textoDegradado black">Alberto Basanta</h4>
+        <div id="iconoMenu" class="iconos soloMovil animate-fade"></div>
+        <h4 class="textoDegradado black">Alberto {Basanta}</h4>
         <nav>
-            <div><a href="#portfolio">portfolio</a></div>
-            <div><a href="#sobremi">sobre mi</a></div>
-            <div><a href="#contacto">contacto</a></div>
+            <div class="menu"><a href="#portfolio">portfolio</a></div>
+            <div class="menu"><a href="#sobremi">sobre mi</a></div>
+            <div class="menu"><a href="#contacto">contacto</a></div>
         </nav> 
     </header>
     <div id="selectorColores">
@@ -37,7 +44,7 @@
         <div class="titular animacionFade"><h2>Portfolio</h2></div>
         <div class="filete aparicionfilete"></div>
         <article>
-    <div class="carrusel animacionFade">
+    <div class="carrusel animacionFadeUp">
         <div class="interiorCarrusel">
             <img src="images/juego-pokemon.webp" alt="portfolio juego Pokemon">
         </div>
@@ -53,7 +60,7 @@
     </div></div>
         </article>
         <article>
-            <div class="carrusel animacionFade">
+            <div class="carrusel animacionFadeUp">
         <div class="interiorCarrusel">
             <img src="images/fabtextil.webp" alt="web fabtextil en WordPress">
         </div>
@@ -92,42 +99,63 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="habilidades" class="animacionFade">
-        <h3>Habilidades</h3>
-        <div class="listahabilidades elementos-aparicion">
-        <div class="card">
+    <div id="habilidades">
+        <h3  class="img-aparicion">Habilidades</h3>
+        <p   class="animacionFade">Herramientas y tecnologías que utilizo para dar vida a las ideas.</p>
+        <div class="listahabilidades">
+        <div class="card aparicionCards">
             <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
             <p>Suite Adobe</p>
         </div>
-        <div class="card">
-            <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
-            <p>Suite Adobe</p>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoFigma iconoshabilidades"></div></div>
+            <p>Figma</p>
         </div>
-        <div class="card">
-            <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
-            <p>Suite Adobe</p>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoStudioCode iconoshabilidades"></div></div>
+            <p>Visual Studio Code</p>
         </div>
-        <div class="card">
-            <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
-            <p>Suite Adobe</p>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoHtml iconoshabilidades"></div></div>
+            <p>HTML </p>
         </div>
-        <div class="card">
-            <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
-            <p>Suite Adobe</p>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoCss iconoshabilidades"></div></div>
+            <p>CSS</p>
         </div>
-        <div class="card">
-            <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
-            <p>Suite Adobe</p>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoJs iconoshabilidades"></div></div>
+            <p>JavaScript </p>
         </div>
-        <div class="card">
-            <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
-            <p>Suite Adobe</p>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoTailwind iconoshabilidades"></div></div>
+            <p>Tailwind CSS</p>
         </div>
-        <div class="card">
-            <div class="ampliacion3"><div class="iconoAdobe iconoshabilidades"></div></div>
-            <p>Suite Adobe</p>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoBootstrap iconoshabilidades"></div></div>
+            <p>Bootstrap</p>
         </div>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoPhp iconoshabilidades"></div></div>
+            <p>PHP</p>
+        </div>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoW3c iconoshabilidades"></div></div>
+            <p>W3C</p>
+        </div>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoWordPress iconoshabilidades"></div></div>
+            <p>WordPress</p>
+        </div>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoJoomla iconoshabilidades"></div></div>
+            <p>Joomla</p>
+        </div>
+        <div class="card aparicionCards">
+            <div class="ampliacion3"><div class="iconoMailchimp iconoshabilidades"></div></div>
+            <p>Mailchimp</p>
+        </div>
+    </div>
     </div>
     </section>
     <section id="contacto">
@@ -154,11 +182,12 @@
     <footer>
         <p>© 2024 Alberto Basanta.</p>
         <div class="flex"><p>Ya has llegado al final, </p>
-            <a  class="flex" href="#wrapper"><p><span class="bold">vuelve al inicio</span><div class="iconoUp iconos"></div></p></a>
+            <a  class="flex" href="#"><p><span class="bold">vuelve al inicio</span><div class="iconoUp iconos"></div></p></a>
         </div>
     </footer>
 </div>
 <script src="js/app.js"></script>
 <script src="js/carrusel.js"></script>
+<script src="js/menu-desk.js"></script>
 </body>
 </html>

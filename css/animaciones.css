@@ -72,8 +72,8 @@
   transform-origin: -100% -120%;
 }
 @keyframes aparecer {
-    30% {
-      transform: scale(80%);
+    0% {
+      transform: scale(20%);
       opacity: 0%;
     }
     100% {
@@ -82,7 +82,8 @@
     }
   }
   .animate-fade {
-    animation: aparecer 1.6s ease-in-out;
+    animation: aparecer 1s ease-out;
+    animation-fill-mode: both;
   }
   
   @keyframes desplazartexto {
@@ -210,7 +211,27 @@
     animation-range: entry 30% cover 50%;
     animation-fill-mode: both;
   }
+  @keyframes aparicionCards {
+    0% {
+      scale: 20%;
+      transform: translateY(100%);
+    }
+    100% {
+      scale: 100%;
+      transform: translateY(0%);
 
+    }
+  }
+  .aparicionCards {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+  
+    animation-timeline: --image;
+    animation-name: aparicionCards;
+  
+    animation-range: entry 25% cover 40%;
+    animation-fill-mode: both;
+  }
   @keyframes fade {
     from {
       opacity: 0;
@@ -248,6 +269,27 @@
     animation-name: fade;
   
     animation-range: entry 50% cover 50%;
+    animation-fill-mode: both;
+  }
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  .animacionFadeUp {
+    view-timeline-name: --titular;
+    view-timeline-axis: block;
+  
+    animation-timeline: --titular;
+    animation-name: fadeUp;
+  
+    animation-range: entry 10% cover 40%;
     animation-fill-mode: both;
   }
 
@@ -373,4 +415,61 @@
 
 .cambioColor {
   animation: cambioColor 0.2s infinite ease-in-out;
+}
+
+@keyframes aparicionBorde {
+  0% {
+    border-left: 2px solid var(--bg-color);
+    border-top: 2px solid var(--bg-color);
+    border-right: 2px solid var(--bg-color);
+    border-bottom: 2px solid var(--bg-color);
+  }
+  20% {
+    border-left: 2px solid var(--neutral-dark-20);
+    border-top: 2px solid var(--neutral-dark-20);
+    border-right: 2px solid var(--neutral-dark-20);
+    border-bottom: 2px solid var(--neutral-dark-20);
+  }
+  60% {
+    border-left: 2px solid var(--neutral-dark-20);
+    border-top: 2px solid var(--neutral-dark-20);
+    border-right: 2px solid var(--neutral-dark-20);
+    border-bottom: 2px solid var(--neutral-dark-20);
+  }
+  70% {
+    border-left: 2px solid var(--primary-light-00);
+    border-top: 2px solid var(--neutral-dark-20);
+    border-right: 2px solid var(--neutral-dark-20);
+    border-bottom: 2px solid var(--neutral-dark-20);
+  }
+  80% {
+    border-left: 2px solid var(--primary-light-00);
+    border-top: 2px solid var(--primary-light-00);
+    border-right: 2px solid var(--neutral-dark-20);
+    border-bottom: 2px solid var(--neutral-dark-20);
+  }
+  90% {
+    border-left: 2px solid var(--primary-light-00);
+    border-top: 2px solid var(--primary-light-00);
+    border-right: 2px solid var(--primary-light-00);
+    border-bottom: 2px solid var(--neutral-dark-20);
+  }
+  100% {
+    border-left: 2px solid var(--primary-light-00);
+    border-top: 2px solid var(--primary-light-00);
+    border-right: 2px solid var(--primary-light-00);
+    border-bottom: 2px solid var(--primary-light-00);
+  }
+}
+@media screen and (min-width: 600px) {
+  .aparicionBorde {
+    view-timeline-name: --borde;
+    view-timeline-axis: block;
+  
+    animation-timeline: --borde;
+    animation-name: aparicionBorde;
+  
+    animation-range: entry 100% cover 50%;
+    animation-fill-mode: both;
+  }
 }

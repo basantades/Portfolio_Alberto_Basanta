@@ -116,7 +116,7 @@ header {
   width: 100%;
   height: 68px;
   padding: 10px 4%;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 10;
   display: flex;
@@ -132,11 +132,44 @@ nav {
   gap: 30px;
   font-size: var(--size-p);
 }
+nav .menu a.active {
+  transition: 1s;
+  color: var(--primary-light-00);
+}
 @media screen and (max-width: 600px) {
   nav {
     display: none;
   }
 }
+@media screen and (max-width: 600px) {
+  header {
+    gap: 20px;
+  }
+}
+/* #menuModal {
+  opacity: 50%;
+position: fixed;
+z-index: 99;
+width: 100%;
+height: 100vh;
+background-color: var(--bg-color);
+}
+.cierre {
+  width: 100%;
+  height: 68px;
+  padding: 10px 4%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.centradoColumn {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+} */
 #selectorColores {
   transition: 0.5s ease-out;
   background-color: var(--text-color);
@@ -493,26 +526,31 @@ section {
   width: fit-content;
   margin: 20px 0;
 }
-
 #habilidades{
-  background-color: var(--secondary-dark-00);
+  margin: 0 auto;
 padding: 30px 5%;
 width: 90%;
+max-width: 1000px;
 }
 #habilidades h3 {
-  color: var(--white);
+  padding-top: 40px;
+  margin: 0 auto;
+  color: var(--primary-light-00);
   text-align: center;
-  padding-bottom: 20px;
-  flex-direction: column;
+}
+#habilidades p {
+  text-align: center;
 }
 .listahabilidades {
+  padding-top: 30px;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
-  color: var(--white);
+  color: var(--text-color);
+  margin: 0 auto;
 }
 .card {
   width: 100px;
@@ -520,12 +558,14 @@ width: 90%;
   display: flex;
   flex-direction: column;
 }
+.card p {
+  text-align: center;
+}
 .iconoshabilidades{
   transition: 1s;
   height: 24px;
   width: 24px;
-  background-color: var(--white);
-  opacity: 60%;
+  background-color: var(--neutral-dark-00);
 }
 .ampliacion3 {
   transform: scale(3);
