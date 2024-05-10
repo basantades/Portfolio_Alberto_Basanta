@@ -76,6 +76,9 @@ function cerrarMenu() {
   desplegableMenu.classList.add("animacionEsconderMenu");
   iconoMenu.classList.remove("ocultar");
   iconoMenuClose.classList.add("ocultar");
+  setTimeout(() => {
+    desplegableMenu.classList.add("ocultar");
+}, 400);
 }
 
 // Event listener para abrir y cerrar menu

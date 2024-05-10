@@ -24,6 +24,8 @@
   --white: #ffffff;
   --gradient: linear-gradient(300deg, #5fb0db 0%, #17b598 60%, #86e9a4 100%);
   --gradient-color: #17b598;
+  --gradient2: linear-gradient(300deg, #1c5d88 0%, #0f927c 70%, #86e9a4 100%);
+  --gradient-color2: #0f927c;
   --highlight-color: #86e9a4;
 }
 
@@ -52,5 +54,7 @@
   --white: #ffffff;
   --gradient: linear-gradient(300deg, #1c5d88 0%, #0f927c 60%, #86e9a4 100%);
   --gradient-color: #0f927c;
+  --gradient2: linear-gradient(300deg, #5fb0db 0%, #17b598 60%, #86e9a4 100%);
+  --gradient-color2: #17b598;
   --highlight-color: #86e9a4;
 }

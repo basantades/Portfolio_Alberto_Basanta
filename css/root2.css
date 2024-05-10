@@ -24,6 +24,8 @@
   --white: #ffffff;
   --gradient: linear-gradient(300deg, #8bb3cf 0%, #40a0f0 60%, #57cfff 100%);
   --gradient-color: #40a0f0;
+  --gradient2: linear-gradient(300deg, #5d83b3 0%, #0a66bd 70%, #57cfff 100%);
+  --gradient-color2: #0a66bd;
   --highlight-color: #57cfff;
 }
 :root.light {
@@ -51,5 +53,7 @@
   --white: #ffffff;
   --gradient: linear-gradient(300deg, #5d83b3 0%, #0a66bd 60%, #57cfff 100%);
   --gradient-color: #0a66bd;
+  --gradient2: linear-gradient(300deg, #8bb3cf 0%, #40a0f0 60%, #57cfff 100%);
+  --gradient-color2: #40a0f0;
   --highlight-color: #57cfff;
 }

@@ -1,7 +1,7 @@
 .bolaMov1 {
   pointer-events: none;
   background-color: var(--highlight-color);
-  opacity: 70%;
+  opacity: 50%;
   filter: blur(100px);
   width: 480px;
   height: 350px;
@@ -16,7 +16,7 @@
 .bolaMov2 {
   pointer-events: none;
   background-color: var(--highlight-color);
-  opacity: 30%;
+  opacity: 40%;
   filter: blur(80px);
   width: 300px;
   height: 320px;
@@ -30,7 +30,7 @@
 }
 .bolaMov3 {
   pointer-events: none;
-  background-color: var(--primary-light-00);
+  background-color: var(--primary-dark-00);
   filter: blur(40px);
   width: 400px;
   height: 320px;
@@ -44,7 +44,7 @@
 }
 .bolaMov4 {
   pointer-events: none;
-  background-color: var(--secondary-light-00);
+  background-color: var(--secondary-dark-00);
   opacity: 90%;
   filter: blur(100px);
   width: 360px;
@@ -351,10 +351,11 @@
 @keyframes aparicionTexto {
   0% {
     opacity: 0;
-    font-size: 500px;
+    transform: scale(2.5);
   }
   100% {
     opacity: 1;
+    transform: scale(1);
   }
 }
 .aparicionTexto {
@@ -450,6 +451,7 @@
 
 @keyframes animacionEsconderMenu {
   0% {
+    z-index: 9;
     opacity: 1;
     transform: translateY(0%);
   }
@@ -457,11 +459,11 @@
     opacity: 0;
     transform: translateY(-100%);
     z-index: -1;
-    display: none;
   }
 }
 .animacionEsconderMenu {
   animation: animacionEsconderMenu 0.4s ease-in-out forwards;
+  animation-fill-mode: forwards;
 }
 
 @keyframes animacionAparecerMenu {
@@ -477,4 +479,32 @@
 }
 .animacionAparecerMenu {
   animation: animacionAparecerMenu 0.4s ease-in-out forwards;
+}
+
+@keyframes aparicionIzquierda {
+  0% {
+    margin-left: -50px;
+    /* transform: translateX(-100%); */
+  }
+  100% {
+    margin-left: 0;
+    /* transform: translatex(0%); */
+  }
+}
+.aparicionIzquierda {
+  animation: aparicionIzquierda 0.8s ease-in-out;
+  animation-fill-mode: both;
+}
+
+@keyframes aparicionIzquierdaExtra {
+  0% {
+    margin-left: -500px;
+  }
+  100% {
+  }
+}
+.aparicionIzquierdaExtra {
+  animation: aparicionIzquierdaExtra 1s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
 }
