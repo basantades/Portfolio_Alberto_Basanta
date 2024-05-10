@@ -298,13 +298,12 @@ nav .menu a.active {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  z-index: 4;
 }
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
   .textHero {
     z-index: 5;
   }
-} */
+}
 #hero h1 {
   color: var(--primary-dark-20);
   margin-bottom: 20px;
