@@ -133,18 +133,8 @@ header h4 {
 .normal {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
-@media screen and (max-width: 380px) {
-  .nombreGrande {
-    display: none;
-  }
-}
-@media screen and (min-width: 381px) {
-  .nombreMediano {
-    display: none;
-  }
-}
 @media screen and (max-width: 280px) {
-  .nombreMediano {
+  .nombreGrande {
     display: none;
   }
 }
@@ -153,7 +143,6 @@ header h4 {
     display: none;
   }
 }
-
 nav {
   display: flex;
   gap: 30px;
@@ -191,6 +180,9 @@ nav .menu a.active {
   header {
     gap: 10px;
   }
+}
+.iconoMenu {
+  cursor: pointer;
 }
 .desplegableMenu {
   background-color: var(--neutral-dark-20);
@@ -301,31 +293,42 @@ nav .menu a.active {
   transition: 1s;
   height: 100vh;
   padding: 10px;
-  padding-top: 78px;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  z-index: 4;
 }
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .textHero {
     z-index: 5;
   }
-}
+} */
 #hero h1 {
   color: var(--primary-dark-20);
-  line-height: 100%;
-  margin-top: 50px;
   margin-bottom: 20px;
+}
+.saludo {
+  padding-left: 0.8%;
+  text-transform: uppercase;
+  font-family: "Roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: clamp(0.8rem, 1.5rem, 5.5vw);
+}
+@media screen and (max-width: 280px) {
+  .borrarMiniMovil{
+    display: none;
+  }
 }
 .front {
   font-size: 18vw;
+  line-height: 70%;
 }
 .end {
   font-size: 10vw;
 }
 .developer {
-  line-height: 90%;
+  line-height: 60%;
   font-size: 15vw;
 }
 .soloTablet {
@@ -345,6 +348,9 @@ nav .menu a.active {
     content: "————————";
     letter-spacing: -8px;
   }
+  .developer {
+    line-height: 90%;
+  }
 }
 @media (max-width: 600px) {
   .textHero {
@@ -355,11 +361,11 @@ nav .menu a.active {
   }
   .front {
     font-size: 26vw;
-    line-height: 40%;
+    line-height: 80%;
   }
   .end {
     font-size: 15vw;
-    line-height: 110%;
+    line-height: 80%;
   }
   .guion::before {
     content: "—————";
@@ -367,7 +373,7 @@ nav .menu a.active {
   }
   .developer {
     font-size: 19vw;
-    line-height: 100%;
+    line-height: 80%;
   }
 }
 .subtitulo {
@@ -375,15 +381,18 @@ nav .menu a.active {
   color: var(--bg-color);
   padding: 0 10%;
 }
+.flecha {
+  transform: scale(0.5);
+  z-index: 6;
+}
 .flechaDown {
   height: 60px;
   width: 80px;
   background-color: var(--primary-dark-20);
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 20px;
   transform: translateX(-50%);
-  z-index: 6;
 }
 .flechaDown:hover {
   background-color: var(--text-color);
