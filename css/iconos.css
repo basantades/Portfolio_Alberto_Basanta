@@ -31,7 +31,10 @@
   -webkit-mask: url(../images/iconos/pdf.svg) no-repeat 50% 50%;
   mask: url(../images/iconos/pdf.svg) no-repeat 50% 50%;
 }
-
+.iconoBehance {
+  -webkit-mask: url(../images/iconos/behance.svg) no-repeat 50% 50%;
+  mask: url(../images/iconos/behance.svg) no-repeat 50% 50%;
+}
 .iconoAdobe {
   -webkit-mask: url(../images/iconos/adobe.svg) no-repeat 50% 50%;
   mask: url(../images/iconos/adobe.svg) no-repeat 50% 50%;
