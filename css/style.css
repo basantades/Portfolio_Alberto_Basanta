@@ -343,7 +343,7 @@ nav .menu a.active {
     line-height: 110%;
   }
   .end {
-    line-height: 0px;
+    line-height: 0;
   }
   .guion::before {
     content: "————————";
@@ -383,7 +383,7 @@ nav .menu a.active {
 }
 .flecha {  position: absolute;
   left: calc(50vw - 40px);
-  bottom: 0px;
+  bottom: 0;
   transform: scale(0.5);
   z-index: 6;
 }
