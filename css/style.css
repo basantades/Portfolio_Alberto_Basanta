@@ -294,8 +294,6 @@ nav .menu a.active {
   overflow: hidden;
 }
 .textHero {
-  transition: 1s;
-  height: 100vh;
   padding: 10px;
   padding-top: 60px;
   display: flex;
@@ -383,7 +381,9 @@ nav .menu a.active {
   color: var(--text-color);
   padding: 0 10%;
 }
-.flecha {
+.flecha {  position: absolute;
+  left: calc(50vw - 40px);
+  bottom: 0px;
   transform: scale(0.5);
   z-index: 6;
 }
@@ -391,10 +391,6 @@ nav .menu a.active {
   height: 60px;
   width: 80px;
   background-color: var(--primary-light-20);
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
 }
 .flechaDown:hover {
   background-color: var(--text-color);
@@ -438,8 +434,9 @@ section {
   top: 0;
   left: 0;
 }
-.carrusel img {
+.interiorCarrusel img {
   height: 300px;
+  width: auto;
 }
 .carrusel img:first-child {
   padding-left: 5vw;
