@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@import url("fonts-size-root.css");
-@import url("animaciones.css");
-@import url("iconos.css");
 
 @font-face {
   font-family: "Roboto";
@@ -378,7 +375,6 @@ nav .menu a.active {
     letter-spacing: -8px;
   }
   .developer {
-    font-size: 19vw;
     line-height: 80%;
   }
 }
@@ -395,7 +391,7 @@ nav .menu a.active {
   height: 60px;
   width: 80px;
   background-color: var(--primary-light-20);
-  /* position: absolute; */
+  position: absolute;
   left: 50%;
   bottom: 20px;
   transform: translateX(-50%);
