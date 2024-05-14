@@ -424,6 +424,7 @@ section {
 .carrusel {
   width: 100%;
   height: 413px;
+  max-height: 40vh;
   position: relative;
   overflow: hidden;
 }
@@ -437,6 +438,7 @@ section {
 }
 .interiorCarrusel img {
   height: 413px;
+  max-height: 40vh;
   width: auto;
 }
 @media screen and (max-width: 1000px) {
