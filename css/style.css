@@ -439,12 +439,20 @@ section {
   height: 413px;
   width: auto;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .interiorCarrusel img {
     height: 300px;
   }
   .carrusel {
     height: 300px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .interiorCarrusel img {
+    height: 200px;
+  }
+  .carrusel {
+    height: 200px;
   }
 }
 .carrusel img:first-child {
