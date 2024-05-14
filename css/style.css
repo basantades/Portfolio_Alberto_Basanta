@@ -585,7 +585,6 @@ section {
 #habilidades {
   margin: 0 auto;
   padding: 30px 5%;
-  width: 90%;
   max-width: 1000px;
 }
 #habilidades h3 {
@@ -595,7 +594,9 @@ section {
   text-align: center;
 }
 #habilidades p {
+  margin: 0 auto;
   text-align: center;
+  width: 90%;
 }
 .listahabilidades {
   padding-top: 30px;
@@ -607,6 +608,12 @@ section {
   gap: 10px;
   color: var(--text-color);
   margin: 0 auto;
+  width: 90%;
+}
+@media (max-width: 768px) {
+  .listahabilidades {
+    width: 100%;
+  }
 }
 .card {
   width: 100px;
