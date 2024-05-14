@@ -282,6 +282,7 @@ nav .menu a.active {
   border: none;
 }
 #hero {
+  transition: 0s;
   position: relative;
   background-image: var(--gradient2);
   background-color: var(--gradient-color2);
