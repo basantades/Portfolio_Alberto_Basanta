@@ -92,13 +92,16 @@ window.addEventListener("scroll", () => {
 // Nodos desplegable
 const linkDesplegable = document.getElementById("linkDesplegable");
 const desplegable = document.getElementById("desplegable");
+const iconoDesplegable = document.getElementById("iconoDesplegable");
 
-// funcion para cambio claro-oscuro
+// funcion para desplegable
 function desplegarAficiones() {
   if (desplegable.getAttribute("class") === "ocultar") {
     desplegable.classList.remove("ocultar");
+    iconoDesplegable.classList.remove("rotado");
   } else {
     desplegable.classList.add("ocultar");
+    iconoDesplegable.classList.add("rotado");
   }
 }
 

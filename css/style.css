@@ -663,7 +663,7 @@ section {
   background-color: var(--secondary-light-10);
 }
 .rotado {
-  transform: rotate(180deg);
+  transform: rotate(-180deg);
   transform-origin: 50% 50%;
 }
 
