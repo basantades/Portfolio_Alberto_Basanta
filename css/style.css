@@ -490,7 +490,7 @@ section {
   flex-wrap: wrap;
 }
 .boton {
-  transition: 1s;
+  transition: .5s;
   width: fit-content;
   min-height: 36px;
   display: flex;
@@ -502,7 +502,7 @@ section {
   color: var(--text-color);
 }
 .iconosportfolio {
-  transition: 1s;
+  transition: .5s;
   height: 24px;
   width: 24px;
   background-color: var(--text-color);
@@ -595,11 +595,10 @@ section {
 }
 #habilidades {
   margin: 0 auto;
-  padding: 30px 5%;
+  padding: 70px 5%;
   max-width: 1000px;
 }
 #habilidades h3 {
-  padding-top: 40px;
   margin: 0 auto;
   color: var(--primary-light-00);
   text-align: center;
@@ -637,7 +636,6 @@ section {
   text-align: center;
 }
 .iconoshabilidades {
-  transition: 1s;
   height: 24px;
   width: 24px;
   background-color: var(--neutral-dark-00);
@@ -646,7 +644,47 @@ section {
   transform: scale(3);
   margin: 24px;
 }
+#aficiones {
+  text-align: center;
+  margin: auto;
+  border: 2px solid var(--secondary-light-10);
+  width: 80%;
+  max-width: 1000px;
+  padding: 30px 40px;
+}
+#linkDesplegable {
+  transition: .5s;
+  cursor: pointer;
+}
+#linkDesplegable:hover {
+  color: var(--secondary-light-10);
+}
+#linkDesplegable:hover .iconos {
+  background-color: var(--secondary-light-10);
+}
+.rotado {
+  transform: rotate(180deg);
+  transform-origin: 50% 50%;
+}
+
+.listaAficiones {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.listaAficiones p {
+  padding: 8px 16px;
+  margin: 0;
+  border: 1px solid var(--neutral-dark-10);
+}
+.tachado {
+  text-decoration: line-through;
+}
 #contacto {
+  padding-top: 50px;
   scroll-margin-top: 100px;
 }
 .contacto {
@@ -670,7 +708,6 @@ section {
   gap: 10px;
 }
 .iconoscontacto {
-  transition: 1s;
   height: 36px;
   width: 36px;
   transform: scale(1.5);
@@ -687,7 +724,7 @@ section {
   display: block;
 }
 .iconos {
-  transition: 1s;
+  transition: .5s;
   height: 24px;
   width: 24px;
   background-color: var(--text-color);
@@ -778,8 +815,11 @@ footer {
 footer p {
   font-size: calc(var(--size-p) * 0.75);
 }
-footer a:hover .iconos {
+.volver:hover .iconos {
   background-image: var(--gradient);
+}
+.volver:hover p {
+color: var(--primary-light-00);
 }
 .ocultar {
   display: none;

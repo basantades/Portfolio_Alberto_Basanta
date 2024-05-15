@@ -88,3 +88,19 @@ iconoMenuClose.addEventListener("click", cerrarMenu);
 window.addEventListener("scroll", () => {
   cerrarMenu();
 });
+
+// Nodos desplegable
+const linkDesplegable = document.getElementById("linkDesplegable");
+const desplegable = document.getElementById("desplegable");
+
+// funcion para cambio claro-oscuro
+function desplegarAficiones() {
+  if (desplegable.getAttribute("class") === "ocultar") {
+    desplegable.classList.remove("ocultar");
+  } else {
+    desplegable.classList.add("ocultar");
+  }
+}
+
+// Event listener desplegable
+linkDesplegable.addEventListener("click", desplegarAficiones);
