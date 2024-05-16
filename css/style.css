@@ -649,7 +649,7 @@ section {
   transition: .5s;
   text-align: center;
   margin: auto;
-  border: 2px solid var(--secondary-light-10);
+  border: 2px solid var(--primary-light-10);
   width: 80%;
   max-width: 1000px;
   padding: 30px 40px;
@@ -659,10 +659,10 @@ section {
   cursor: pointer;
 }
 #linkDesplegable:hover {
-  color: var(--secondary-light-10);
+  color: var(--primary-light-10);
 }
 #linkDesplegable:hover .iconos {
-  background-color: var(--secondary-light-10);
+  background-color: var(--primary-light-10);
 }
 .rotado {
   transform: rotate(-180deg);
@@ -695,7 +695,7 @@ section {
 .lista {
   width: 100%;
   margin: 0 auto;
-  max-width: 400px;
+  max-width: 70%;
 }
 .listado {
   padding: 16px;
@@ -759,7 +759,8 @@ section {
 .marco {
   border: 2px solid var(--neutral-dark-10);
   max-height: 400px;
-  padding: 10%;
+  max-width: 70%;
+  padding: 60px 13%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -828,17 +829,40 @@ color: var(--primary-light-00);
 }
 
 
-
-
 /* formulario */
 #formulario {
-  margin: 100px auto;
+  width: 90%;
+  margin: 0 auto 20px auto;
 }
 #formulario form {
-  width: 90%;
-  max-width: 600px;
-  margin: 50px auto;
+  max-width: 70%;
+  margin: 20px auto 50px auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+input, textarea {
+  font-family: "Roboto", Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: var(--neutral-dark-20);
+  color: var(--text-color);
+}
+textarea {
+  height: 200px;
+}
+form button {
+  background-color: var(--primary-light-00);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.h-captcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
