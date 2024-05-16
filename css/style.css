@@ -831,3 +831,14 @@ color: var(--primary-light-00);
 
 
 /* formulario */
+#formulario {
+  margin: 100px auto;
+}
+#formulario form {
+  width: 90%;
+  max-width: 600px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
