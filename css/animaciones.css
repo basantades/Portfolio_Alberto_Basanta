@@ -73,11 +73,11 @@
 }
 @keyframes aparecer {
   0% {
-    transform: scale(20%);
+    transform: scale(0.2);
     opacity: 0%;
   }
   100% {
-    transform: scale(100%);
+    transform: scale(1);
     opacity: 100%;
   }
 }
@@ -114,13 +114,13 @@
 
 @keyframes ampliar-rebote {
   0% {
-    transform: scale(40%);
+    transform: scale(0.4);
   }
   80% {
-    transform: scale(110%);
+    transform: scale(1.1);
   }
   100% {
-    transform: scale(100%);
+    transform: scale(1);
   }
 }
 .animate-movimiento-rebote {
@@ -167,14 +167,14 @@
 @keyframes aparicion {
   0% {
     opacity: 0;
-    scale: 20%;
+    transform: scale(0.2);
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    scale: 100%;
+    transform: scale(1);
   }
 }
 .elementos-aparicion {
@@ -200,16 +200,16 @@
 @keyframes aparicionMarco {
   0% {
     opacity: 0;
-    scale: 20%;
+    transform: scale(0.2);
   }
   30% {
     opacity: 0;
-    scale: 20%;
+    transform: scale(0.2);
   }
 
   100% {
     opacity: 1;
-    scale: 100%;
+    transform: scale(1);
   }
 }
 .animacion-marcos {
@@ -224,12 +224,10 @@
 }
 @keyframes aparicionCards {
   0% {
-    scale: 20%;
-    transform: translateY(100%);
+    transform: translateY(100%) scale(0.2);
   }
   100% {
-    scale: 100%;
-    transform: translateY(0%);
+    transform: translateY(0%) scale(1);
   }
 }
 .aparicionCards {
@@ -395,23 +393,23 @@
   0% {
     opacity: 0;
 
-    transform: translateX(-100%) scaleX(20%);
+    transform: translateX(-100%) scaleX(0.2);
   }
   40% {
     opacity: 0;
   }
   50% {
     opacity: 1;
-    transform: translateX(-100%) scaleX(20%);
+    transform: translateX(-100%) scaleX(0.2);
   }
   60% {
-    transform: translateX(0) scaleX(100%);
+    transform: translateX(0) scaleX(1);
   }
   70% {
-    transform: translateX(0) scaleX(100%);
+    transform: translateX(0) scaleX(1);
   }
   80% {
-    transform: translateX(100%) scaleX(20%);
+    transform: translateX(100%) scaleX(0.2);
   }
   81% {
     opacity: 1;
@@ -421,14 +419,14 @@
   }
   83% {
     opacity: 0;
-    transform: translateX(-100%) scaleX(20%);
+    transform: translateX(-100%) scaleX(0.2);
   }
   90% {
     opacity: 1;
-    transform: translateX(-100%) scaleX(20%);
+    transform: translateX(-100%) scaleX(0.2);
   }
   100% {
-    transform: translateX(0) scaleX(100%);
+    transform: translateX(0) scaleX(1);
   }
 }
 
