@@ -561,6 +561,7 @@ section {
   position: relative;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -596,7 +597,8 @@ section {
 #habilidades {
   margin: 0 auto;
   padding: 70px 5%;
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1120px;
 }
 #habilidades h3 {
   margin: 0 auto;
@@ -607,7 +609,6 @@ section {
   margin-left:  auto;
   margin-right: auto;
   text-align: center;
-  width: 90%;
 }
 .listahabilidades {
   padding-top: 30px;
@@ -645,6 +646,7 @@ section {
   margin: 24px;
 }
 #aficiones {
+  transition: .5s;
   text-align: center;
   margin: auto;
   border: 2px solid var(--secondary-light-10);
@@ -666,7 +668,6 @@ section {
   transform: rotate(-180deg);
   transform-origin: 50% 50%;
 }
-
 .listaAficiones {
   padding-top: 30px;
   display: flex;
@@ -825,3 +826,8 @@ color: var(--primary-light-00);
   display: none;
   transition: 2s;
 }
+
+
+
+
+/* formulario */

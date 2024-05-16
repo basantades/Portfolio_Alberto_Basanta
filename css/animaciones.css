@@ -530,3 +530,22 @@
   animation-range: entry 5% cover 25%;
   animation-fill-mode: both;
 }
+
+
+@keyframes aparicionBorde {
+  0% {
+border-color: var(--bg-color);
+  }
+  100% {
+  }
+}
+.aparicionBorde {
+  view-timeline-name: --border;
+  view-timeline-axis: block;
+
+  animation-timeline: --border;
+  animation-name: aparicionBorde;
+
+  animation-range: entry 50% cover 50%;
+  animation-fill-mode: both;
+}

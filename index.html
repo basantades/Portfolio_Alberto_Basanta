@@ -291,7 +291,7 @@
         </div>
     </div>
     </div>
-    <div id="aficiones">
+    <div id="aficiones" class="aparicionBorde">
         <div id="linkDesplegable" class="flex elementos-aparicion">
             <p>Si quieres conocerme un poco más despliega para ver mis aficiones </p>
             <div id="iconoDesplegable" class="iconoUp iconos rotado"></div>
@@ -323,6 +323,24 @@
 <div class="flexcentrado animacionFade">
     <div class="marco"><a target="_blank" href="mailto:basantades@gmail.com"><h5 class="fraseFinal">¿Tienes un proyecto en mente?<br> ¡Estoy a <span class="clic">solo un clic</span> de distancia, <br>no dudes en escribirme!</h5></a></div>
 </div>
+<div id="formulario">
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="ba6c5ec4-b155-4179-beb6-8d9c775fa1be">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <input type="text" name="name" required>
+        <input type="email" name="email" required>
+        <textarea name="message" required></textarea>
+    
+        <!-- hCaptcha Spam Protection -->
+        <div class="h-captcha" data-captcha="true"></div>
+    
+        <button type="submit">Submit Form</button>
+    
+    </form>
+</div>
 </div>
     </section>
     <footer>
@@ -338,5 +356,7 @@
 <script src="js/app.js"></script>
 <script src="js/carrusel.js"></script>
 <script src="js/menu-desk.js"></script>
+<!-- Required for hCaptcha formulario -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
