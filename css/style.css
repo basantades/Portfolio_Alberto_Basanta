@@ -379,6 +379,9 @@ nav .menu a.active {
   text-align: center;
   color: var(--text-color);
   padding: 0 10%;
+  font-weight: 400;
+  font-size: var(--size-h5);
+  font-family: "Roboto", Geneva, Tahoma, sans-serif;
 }
 .flecha {  position: absolute;
   left: calc(50vw - 40px);
