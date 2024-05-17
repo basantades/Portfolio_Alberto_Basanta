@@ -298,7 +298,7 @@
         </div>
         <div id="desplegable" class="ocultar">
             <div class="listaAficiones animate-fade">
-                <p class="aparicionFadeUp">Juegos de mesa</p><p class="aparicionFadeUp">Videojuegos</p><p class="aparicionFadeUp">Escape Rooms</p><p class="aparicionFadeUp">Wargames</p><p class="aparicionFadeUp">Puzzles</p><p class="aparicionFadeUp">Rompecabezas</p><p class="aparicionFadeUp">Cine</p><p class="aparicionFadeUp">Series</p><p class="aparicionFadeUp">Literatura de fantasía</p><p class="aparicionFadeUp">Ciencia Ficción</p><p class="aparicionFadeUp">Terror</p><p class="aparicionFadeUp">True Crime</p><p class="aparicionFadeUp">Deportes</p><p class="aparicionFadeUp">Gimnasio</p><p class="aparicionFadeUp">Fútbol (Depor)</p><p class="aparicionFadeUp">Billar</p><p class="aparicionFadeUp">Pádel... por la cervecita de despúes</p>
+                <p class="aparicionFadeUp">Juegos de mesa</p><p class="aparicionFadeUp">Videojuegos</p><p class="aparicionFadeUp">Escape Rooms</p><p class="aparicionFadeUp">Wargames</p><p class="aparicionFadeUp">Puzzles</p><p class="aparicionFadeUp">Rompecabezas</p><p class="aparicionFadeUp">Cine</p><p class="aparicionFadeUp">Series</p><p class="aparicionFadeUp">Literatura de fantasía</p><p class="aparicionFadeUp">Ciencia Ficción</p><p class="aparicionFadeUp">Terror</p><p class="aparicionFadeUp">True Crime</p><p class="aparicionFadeUp">Deportes</p><p class="aparicionFadeUp">Gimnasio</p><p class="aparicionFadeUp">Fútbol (Depor)</p><p class="aparicionFadeUp">Billar</p><p class="aparicionFadeUp">Pádel... y la cervecita de despúes</p>
         </div>
         </div>
 
@@ -321,9 +321,29 @@
 <div><a target="_blank" href="https://www.linkedin.com/in/albertobasanta/"><div class="iconoLinkedin iconos"></div></a></div> 
 </div>
 <div class="flexcentrado">
-     <div class="marco"><a target="_blank" href="mailto:basantades@gmail.com"><h5 class="fraseFinal">¿Tienes un proyecto en mente? ¡Estoy a <span class="clic">solo un clic</span> de distancia, no dudes en escribirme!</h5></a></div>
+    
+<div id="formulario">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <h5 class="animacionFade">Formulario de contacto</h5>
+        <!-- Replace with your Access Key -->
+        <input class="animacionFade" type="hidden" name="access_key" value="ba6c5ec4-b155-4179-beb6-8d9c775fa1be">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <input class="animacionFade" placeholder="Nombre" type="text" name="name" required>
+        <input class="animacionFade" placeholder="Correo" type="email" name="email" required>
+        <textarea class="animacionFade" placeholder="Mensaje" name="message" required></textarea>
+    
+        <!-- hCaptcha Spam Protection -->
+        <div class="h-captcha" data-captcha="true"></div>
+    
+        <button class="animacionFade" type="submit">Enviar</button>
+    
+    </form>
+</div>
+    <!-- <div class="marco"><a target="_blank" href="mailto:basantades@gmail.com"><h5 class="fraseFinal">¿Tienes un proyecto en mente? ¡Estoy a <span class="clic">solo un clic</span> de distancia, no dudes en escribirme!</h5></a></div> -->
 </div>
 </div>
+    <div class=""><a target="_blank" href="mailto:basantades@gmail.com"><h5 class="fraseFinal">¿Tienes un proyecto en mente? ¡Estoy a <span class="clic">solo un clic</span> de distancia, no dudes en escribirme!</h5></a></div>
     </section>
     <footer>
         <p>© 2024 Alberto Basanta.</p>
@@ -338,5 +358,7 @@
 <script src="js/app.js"></script>
 <script src="js/carrusel.js"></script>
 <script src="js/menu-desk.js"></script>
+<!-- Required for hCaptcha formulario -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
