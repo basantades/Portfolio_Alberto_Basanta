@@ -653,6 +653,12 @@ section {
   max-width: 760px;
   padding: 30px 40px;
 }
+@media (max-width: 768px) {
+  #aficiones {
+    width: 90%;
+    padding: 30px 10px;
+  }
+}
 #linkDesplegable {
   transition: .5s;
   cursor: pointer;
@@ -679,6 +685,11 @@ section {
   padding: 8px 16px;
   margin: 0;
   border: 1px solid var(--neutral-dark-10);
+}
+@media (max-width: 768px) {
+  .listaAficiones p {
+    padding: 8px 12px;
+  }
 }
 .tachado {
   text-decoration: line-through;
