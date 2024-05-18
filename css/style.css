@@ -540,7 +540,7 @@ section {
   grid-template-columns: 33% 1fr;
   width: 90%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .doscolumnas {
     display: grid;
     grid-template-columns: 1fr;
@@ -710,6 +710,11 @@ section {
   padding: 16px;
   border-bottom: 2px solid var(--neutral-dark-10);
 }
+@media screen and (max-width: 1000px) {
+  .lista {
+    max-width: 80%;
+  }
+}
 @media screen and (max-width: 400px) {
   .lista {
     max-width: 90%;
@@ -765,6 +770,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1000px) {
+  .marco {
+    max-width: 80%;
+  }
 }
 @media screen and (max-width: 768px) {
   .marco {
