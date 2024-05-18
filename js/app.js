@@ -1,5 +1,5 @@
 // Nodos para cambio de root
-const rootcss = document.getElementById("rootcss");
+const body = document.querySelector("body");
 const iconoColor = document.getElementById("iconoColor");
 let punto1 = document.querySelector(".punto1");
 let punto2 = document.querySelector(".punto2");
@@ -10,20 +10,20 @@ const contenidoTextoHero = textoHero.innerHTML;
 
 // Funcion para cambio de root
 function changeColor() {
-  if (rootcss.getAttribute("href") === "css/root2.css") {
-    rootcss.setAttribute("href", "css/root3.css");
+  if (body.getAttribute("class") === "azul") {
+    body.setAttribute("class", "naranja");
     punto2.classList.remove("actual");
     punto3.classList.add("actual");
-  } else if (rootcss.getAttribute("href") === "css/root3.css") {
-    rootcss.setAttribute("href", "css/root4.css");
+  } else if (body.getAttribute("class") === "naranja") {
+    body.setAttribute("class", "lila");
     punto3.classList.remove("actual");
     punto4.classList.add("actual");
-  } else if (rootcss.getAttribute("href") === "css/root4.css") {
-    rootcss.setAttribute("href", "css/root.css");
+  } else if (body.getAttribute("class") === "lila") {
+    body.setAttribute("class", "verde");
     punto4.classList.remove("actual");
     punto1.classList.add("actual");
   } else {
-    rootcss.setAttribute("href", "css/root2.css");
+    body.setAttribute("class", "azul");
     punto1.classList.remove("actual");
     punto2.classList.add("actual");
   }

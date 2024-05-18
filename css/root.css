@@ -1,5 +1,5 @@
 :root,
-:root.dark {
+:root.dark .verde {
   --primary-light-00: #17b598;
   --primary-light-10: #30d1b1;
   --primary-light-20: #71eace;
@@ -28,8 +28,7 @@
   --gradient-color2: #0f927c;
   --highlight-color: #86e9a4;
 }
-
-:root.light {
+:root.light .verde {
   --primary-light-00: #0f927c;
   --primary-light-10: #117465;
   --primary-light-20: #125d52;
@@ -57,4 +56,214 @@
   --gradient2: linear-gradient(300deg, #5fb0db 0%, #17b598 60%, #86e9a4 100%);
   --gradient-color2: #17b598;
   --highlight-color: #86e9a4;
+}
+:root,
+:root.dark .azul {
+  --primary-light-00: #40a0f0;
+  --primary-light-10: #82c0f7;
+  --primary-light-20: #bddcfa;
+  --primary-dark-00: #1785e0;
+  --primary-dark-10: #0a66bd;
+  --primary-dark-20: #09529b;
+  --secondary-light-00: #8bb3cf;
+  --secondary-light-10: #b1cddf;
+  --secondary-light-20: #d1e0ec;
+  --secondary-dark-00: #5d83b3;
+  --secondary-dark-10: #5576aa;
+  --secondary-dark-20: #475e86;
+  --neutral-light-00: #9094a0;
+  --neutral-light-10: #d9dade;
+  --neutral-light-20: #f7f8f8;
+  --neutral-dark-00: #5c606d;
+  --neutral-dark-10: #41444b;
+  --neutral-dark-20: #292a2f;
+  --bg-color: #212026;
+  --text-color: #ffffff;
+  --black: #212026;
+  --white: #ffffff;
+  --gradient: linear-gradient(300deg, #8bb3cf 0%, #40a0f0 60%, #57cfff 100%);
+  --gradient-color: #40a0f0;
+  --gradient2: linear-gradient(300deg, #5d83b3 0%, #0a66bd 70%, #57cfff 100%);
+  --gradient-color2: #0a66bd;
+  --highlight-color: #57cfff;
+}
+:root.light .azul {
+  --primary-light-00: #1785e0;
+  --primary-light-10: #0a66bd;
+  --primary-light-20: #09529b;
+  --primary-dark-00: #40a0f0;
+  --primary-dark-10: #82c0f7;
+  --primary-dark-20: #bddcfa;
+  --secondary-light-00: #5d83b3;
+  --secondary-light-10: #5576aa;
+  --secondary-light-20: #475e86;
+  --secondary-dark-00: #8bb3cf;
+  --secondary-dark-10: #b1cddf;
+  --secondary-dark-20: #d1e0ec;
+  --neutral-light-00: #5c606d;
+  --neutral-light-10: #41444b;
+  --neutral-light-20: #292a2f;
+  --neutral-dark-00: #9094a0;
+  --neutral-dark-10: #d9dade;
+  --neutral-dark-20: #f7f8f8;
+  --bg-color: #ffffff;
+  --text-color: #212026;
+  --black: #212026;
+  --white: #ffffff;
+  --gradient: linear-gradient(300deg, #5d83b3 0%, #0a66bd 60%, #57cfff 100%);
+  --gradient-color: #0a66bd;
+  --gradient2: linear-gradient(300deg, #8bb3cf 0%, #40a0f0 60%, #57cfff 100%);
+  --gradient-color2: #40a0f0;
+  --highlight-color: #57cfff;
+}
+:root,
+:root.dark .naranja {
+  --primary-light-00: #ed8c1c;
+  --primary-light-10: #f1a946;
+  --primary-light-20: #f6ca7b;
+  --primary-dark-00: #ee8529;
+  --primary-dark-10: #df6717;
+  --primary-dark-20: #b94e15;
+  --secondary-light-00: #f09179;
+  --secondary-light-10: #f7baaa;
+  --secondary-light-20: #fbd6cd;
+  --secondary-dark-00: #e56c4e;
+  --secondary-dark-10: #d15131;
+  --secondary-dark-20: #b04125;
+  --neutral-light-00: #9094a0;
+  --neutral-light-10: #d9dade;
+  --neutral-light-20: #f7f8f8;
+  --neutral-dark-00: #5c606d;
+  --neutral-dark-10: #41444b;
+  --neutral-dark-20: #292a2f;
+  --bg-color: #212026;
+  --text-color: #ffffff;
+  --black: #212026;
+  --white: #ffffff;
+  --gradient: linear-gradient(300deg, #f09179 0%, #ed8c1c 60%, #ffde7d 100%);
+  --gradient-color: #ed8c1c;
+  --gradient2: linear-gradient(300deg, #e56c4e 0%, #ee8529 70%, #ffde7d 100%);
+  --gradient-color2: #ee8529;
+  --highlight-color: #ffde7d;
+}
+:root.light .naranja {
+  --primary-light-00: #ee8529;
+  --primary-light-10: #df6717;
+  --primary-light-20: #b94e15;
+  --primary-dark-00: #ed8c1c;
+  --primary-dark-10: #f1a946;
+  --primary-dark-20: #f6ca7b;
+  --secondary-light-00: #e56c4e;
+  --secondary-light-10: #d15131;
+  --secondary-light-20: #b04125;
+  --secondary-dark-00: #f09179;
+  --secondary-dark-10: #f7baaa;
+  --secondary-dark-20: #fbd6cd;
+  --neutral-light-00: #5c606d;
+  --neutral-light-10: #41444b;
+  --neutral-light-20: #292a2f;
+  --neutral-dark-00: #9094a0;
+  --neutral-dark-10: #d9dade;
+  --neutral-dark-20: #f7f8f8;
+  --bg-color: #ffffff;
+  --text-color: #212026;
+  --black: #212026;
+  --white: #ffffff;
+  --gradient: linear-gradient(300deg, #e56c4e 0%, #ee8529 60%, #ffde7d 100%);
+  --gradient-color: #ee8529;
+  --gradient2: linear-gradient(300deg, #f09179 0%, #ed8c1c 60%, #ffde7d 100%);
+  --gradient-color2: #ed8c1c;
+  --highlight-color: #ffde7d;
+}
+:root,
+:root.dark .lila {
+  --primary-light-00: #d571eb;
+  --primary-light-10: #e8b2f5;
+  --primary-light-20: #f1d4fa;
+  --primary-dark-00: #c755e0;
+  --primary-dark-10: #ad35c4;
+  --primary-dark-20: #9129a2;
+  --secondary-light-00: #b099ec;
+  --secondary-light-10: #cbbef4;
+  --secondary-light-20: #e1dbf9;
+  --secondary-dark-00: #8b61df;
+  --secondary-dark-10: #8651d6;
+  --secondary-dark-20: #763fc2;
+  --neutral-light-00: #9094a0;
+  --neutral-light-10: #d9dade;
+  --neutral-light-20: #f7f8f8;
+  --neutral-dark-00: #5c606d;
+  --neutral-dark-10: #41444b;
+  --neutral-dark-20: #292a2f;
+  --bg-color: #212026;
+  --text-color: #ffffff;
+  --black: #212026;
+  --white: #ffffff;
+  --gradient: linear-gradient(300deg, #8b61df 0%, #d571eb 60%, #ffcc70 100%);
+  --gradient-color: #d571eb;
+  --gradient2: linear-gradient(300deg, #763fc2 0%, #c755e0 70%, #ffcc70 100%);
+  --gradient-color2: #c755e0;
+  --highlight-color: #ffcc70;
+}
+:root.light .lila {
+  --primary-light-00: #c755e0;
+  --primary-light-10: #ad35c4;
+  --primary-light-20: #9129a2;
+  --primary-dark-00: #d571eb;
+  --primary-dark-10: #e8b2f5;
+  --primary-dark-20: #f1d4fa;
+  --secondary-light-00: #8b61df;
+  --secondary-light-10: #8651d6;
+  --secondary-light-20: #763fc2;
+  --secondary-dark-00: #b099ec;
+  --secondary-dark-10: #cbbef4;
+  --secondary-dark-20: #e1dbf9;
+  --neutral-light-00: #5c606d;
+  --neutral-light-10: #41444b;
+  --neutral-light-20: #292a2f;
+  --neutral-dark-00: #9094a0;
+  --neutral-dark-10: #d9dade;
+  --neutral-dark-20: #f7f8f8;
+  --bg-color: #ffffff;
+  --text-color: #212026;
+  --black: #212026;
+  --white: #ffffff;
+  --gradient: linear-gradient(300deg, #763fc2 0%, #c755e0 60%, #ffcc70 100%);
+  --gradient-color: #c755e0;
+  --gradient2: linear-gradient(300deg, #8b61df 0%, #d571eb 60%, #ffcc70 100%);
+  --gradient-color2: #d571eb;
+  --highlight-color: #ffcc70;
+}
+
+/* For browsers that support clamp  */
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+    --size-p: clamp(0.9rem, 0.2vi + 0.9rem, 1rem);
+    --size-h5: clamp(1rem, 0.2vi + 1rem, 1.2rem);
+    --size-h4: clamp(1.3rem, 0.4vi + 1.2rem, 1.6rem);
+    --size-h3: clamp(1.5rem, 0.8vi + 1.3rem, 2rem);
+    --size-h2: clamp(2.2rem, 2.5vi + 1.7rem, 3.8rem);
+    --size-h1: clamp(2.2rem, 3vi + 2.2rem, 5rem);
+  }
+}
+/* For browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+    --size-p: 0.9rem;
+    --size-h5: 1.1rem;
+    --size-h4: 1.3rem;
+    --size-h3: 1.5rem;
+    --size-h2: 1.7rem;
+    --size-h1: 2rem;
+  }
+  @media screen and (min-width: 1280px) {
+    :root {
+      --size-p: 1rem;
+      --size-h5: 1.3rem;
+      --size-h4: 1.6rem;
+      --size-h3: 2rem;
+      --size-h2: 2.4rem;
+      --size-h1: 3.1rem;
+    }
+  }
 }
