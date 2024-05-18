@@ -357,13 +357,13 @@
   }
 }
 .aparicionTexto {
-  animation: aparicionTexto 0.8s ease-in-out;
+  animation: aparicionTexto 0.6s ease-in-out;
   animation-fill-mode: both;
 
 }
 .aparicionTexto2 {
-  animation: fade 0.8s ease-in-out;
-  animation-delay: 0.8s;
+  animation: fade 0.6s ease-in-out;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
 }
 
@@ -384,8 +384,8 @@
   animation: aparicionInferior 0.8s ease-in-out;
 }
 .aparicionInferior2 {
-  animation: aparicionInferior 0.8s ease-in-out;
-  animation-delay: 1s;
+  animation: aparicionInferior 0.6s ease-in-out;
+  animation-delay: 0.8s;
   animation-fill-mode: both;
 }
 
@@ -504,7 +504,7 @@
   }
 }
 .aparicionIzquierdaExtra {
-  animation: aparicionIzquierdaExtra 1.2s ease-in-out;
+  animation: aparicionIzquierdaExtra 0.8s ease-in-out;
   animation-delay: 0.1s;
   animation-fill-mode: both;
 }

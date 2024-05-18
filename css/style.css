@@ -343,6 +343,7 @@ nav .menu a.active {
   }
   .end {
     line-height: 0;
+    
   }
   .guion::before {
     content: "————————";
@@ -350,6 +351,7 @@ nav .menu a.active {
   }
   .developer {
     line-height: 90%;
+    font-size: 13.5vw;
   }
 }
 @media (max-width: 600px) {
@@ -373,6 +375,7 @@ nav .menu a.active {
   }
   .developer {
     line-height: 80%;
+    font-size: 15vw;
   }
 }
 .subtitulo {
@@ -519,15 +522,9 @@ section {
 .boton:hover .iconosportfolio {
   background-color: var(--primary-light-00);
 }
-
 @media screen and (max-width: 300px) {
   .boton {
-    border-radius: 0;
-    border: none;
-    padding: 0;
-  }
-  .boton :first-child {
-    display: none;
+    padding: 0 16px;
   }
 }
 .doscolumnas {
@@ -713,7 +710,11 @@ section {
   padding: 16px;
   border-bottom: 2px solid var(--neutral-dark-10);
 }
-
+@media screen and (max-width: 400px) {
+  .lista {
+    max-width: 90%;
+  }
+}
 .listado a {
   display: flex;
   align-items: center;
@@ -748,21 +749,9 @@ section {
 .listado a:hover {
   color: var(--primary-light-10);
 }
-.iconosMovil {
-  width: 100%;
-  display: none;
-}
-.iconosMovil div {
-  width: auto;
-}
 @media screen and (max-width: 300px) {
-  .lista {
-    display: none;
-  }
-  .iconosMovil {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 20px;
+  .listado {
+    padding: 16px 0;
   }
   section {
     margin: 20px 0;
@@ -781,6 +770,13 @@ section {
 @media screen and (max-width: 768px) {
   .marco {
     margin-top: 30px;
+    padding: 40px 5%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .marco {
+    margin-top: 20px;
+    max-width: 90%;
   }
 }
 .fraseFinal {
@@ -797,8 +793,13 @@ section {
   animation: cambioColor 1s infinite ease-in-out;
 }
 @media screen and (max-width: 450px) {
-  .fraseFinal br {
-    display: none;
+  .fraseFinal {
+    font-size: var(--size-h5);
+  }
+}
+@media screen and (max-width: 300px) {
+  .fraseFinal {
+    font-size: var(--size-p);
   }
 }
 footer {
