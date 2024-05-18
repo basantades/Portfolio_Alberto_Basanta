@@ -759,9 +759,8 @@ section {
 }
 .marco {
   border: 2px solid var(--neutral-dark-10);
-  max-height: 400px;
   max-width: 70%;
-  padding: 60px 13%;
+  padding: 35px 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -770,7 +769,7 @@ section {
 @media screen and (max-width: 768px) {
   .marco {
     margin-top: 30px;
-    padding: 40px 5%;
+    padding: 30px 5%;
   }
 }
 @media screen and (max-width: 400px) {
@@ -792,7 +791,7 @@ section {
 .fraseFinal:hover .clic {
   animation: cambioColor 1s infinite ease-in-out;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 1000px) {
   .fraseFinal {
     font-size: var(--size-h5);
   }
