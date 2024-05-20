@@ -427,9 +427,9 @@ section {
 
 .carrusel {
   width: 100%;
-  height: 413px;
-  max-height: 40vh;
-  max-height: 40dvh;
+  height: 413px;  
+  max-height: 50vh;
+  max-height: 50dvh;
   position: relative;
   overflow: hidden;
 }
@@ -442,25 +442,29 @@ section {
   left: 0;
 }
 .interiorCarrusel img {
-  height: 413px;
-  max-height: 40vh;
-  max-height: 40dvh;
+  height: 413px;  
+  max-height: 50vh;
+  max-height: 50dvh;
   width: auto;
 }
 @media screen and (max-width: 1000px) {
-  .interiorCarrusel img {
-    height: 300px;
+  .interiorCarrusel img { 
+    max-height: 40vh;
+    max-height: 40dvh;
   }
   .carrusel {
-    height: 300px;
+    max-height: 40vh;
+    max-height: 40dvh;
   }
 }
 @media screen and (max-width: 600px) {
   .interiorCarrusel img {
-    height: 200px;
+    max-height: 35vh;
+    max-height: 35dvh;
   }
   .carrusel {
-    height: 200px;
+    max-height: 35vh;
+    max-height: 35dvh;
   }
 }
 .carrusel img:first-child {
@@ -570,6 +574,7 @@ section {
 .imgAlberto {
   border-radius: 20px 0 20px 0;
   width: 90%;
+height: auto;
 }
 .enmarcarFoto {
   aspect-ratio: 1 / 1;
