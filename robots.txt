@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://basantades.netlify.app/sitemap.xml
