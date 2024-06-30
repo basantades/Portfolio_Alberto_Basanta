@@ -310,6 +310,7 @@ nav .menu a.active {
   margin-bottom: 20px;
 }
 .saludo {
+  margin-bottom: 300px;
   padding-left: 0.8%;
   text-transform: uppercase;
   font-family: "Roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
@@ -320,12 +321,24 @@ nav .menu a.active {
     display: none;
   }
 }
+.dise {
+  font-size: 15vw;
+  line-height: 100%;
+}
 .front {
   font-size: 18vw;
   line-height: 70%;
 }
+.web {
+  line-height: 100%;
+  font-size: 15vw;
+}
 .end {
   font-size: 10vw;
+}
+.maqueta {
+  line-height: 100%;
+  font-size: 12.4vw;
 }
 .developer {
   line-height: 60%;
@@ -343,12 +356,15 @@ nav .menu a.active {
   }
   .end {
     line-height: 0;
-    
   }
   .guion::before {
     content: "————————";
     letter-spacing: -8px;
   }
+  /* .maqueta {
+    line-height: 100%;
+    font-size: 11vw;
+  } */
   .developer {
     line-height: 90%;
     font-size: 13.5vw;
@@ -361,8 +377,16 @@ nav .menu a.active {
   #hero h1 {
     line-height: normal;
   }
+  .dise {
+    font-size: 24vw;
+    line-height: 100%;
+  }
   .front {
     font-size: 26vw;
+    line-height: 80%;
+  }
+  .web {
+    font-size: 24vw;
     line-height: 80%;
   }
   .end {
@@ -372,6 +396,10 @@ nav .menu a.active {
   .guion::before {
     content: "—————";
     letter-spacing: -8px;
+  }
+  .maqueta {
+    line-height: 120%;
+    font-size: 11.8vw;
   }
   .developer {
     line-height: 80%;
