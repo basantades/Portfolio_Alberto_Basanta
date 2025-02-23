@@ -10,7 +10,7 @@ Puedes explorar el portafolio en línea en: [https://basantades.vercel.app/](htt
 
 ## Índice
 
-- [Navegación](#uso)
+- [Navegación](#navegación)
 - [Características](#características)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [Licencia](#licencia)
