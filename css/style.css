@@ -661,7 +661,7 @@ height: auto;
   gap: 10px;
   color: var(--text-color);
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 900px;
 }
 @media (max-width: 768px) {
   .listahabilidades {
@@ -1079,7 +1079,18 @@ form button:hover {
   -webkit-mask: url(../images/iconos/mailchimp.svg) no-repeat 50% 50%;
   mask: url(../images/iconos/mailchimp.svg) no-repeat 50% 50%;
 }
-
+.iconoGit {
+  -webkit-mask: url(../images/iconos/git.svg) no-repeat 50% 50%;
+  mask: url(../images/iconos/git.svg) no-repeat 50% 50%;
+}
+.iconoTypeScript {
+  -webkit-mask: url(../images/iconos/typescript.svg) no-repeat 50% 50%;
+  mask: url(../images/iconos/typescript.svg) no-repeat 50% 50%;
+}
+.iconoAngular {
+  -webkit-mask: url(../images/iconos/angular.svg) no-repeat 50% 50%;
+  mask: url(../images/iconos/angular.svg) no-repeat 50% 50%;
+}
 .iconoEmail {
   -webkit-mask: url(../images/iconos/Email.svg) no-repeat 50% 50%;
   mask: url(../images/iconos/Email.svg) no-repeat 50% 50%;

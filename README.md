@@ -8,14 +8,6 @@ Bienvenido a mi portafolio personal, donde presento mis habilidades y proyectos 
 
 Puedes explorar el portafolio en línea en: [https://basantades.vercel.app/](https://basantades.vercel.app/)
 
-## Índice
-
-- [Navegación](#navegación)
-- [Características](#características)
-- [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Licencia](#licencia)
-- [Contacto](#contacto)
-
 ## Navegación
 
 Una vez abierto el `index.html`, podrás navegar por las diferentes secciones de mi portafolio:
