@@ -344,7 +344,7 @@ nav .menu a.active {
 }
 .maqueta {
   line-height: 100%;
-  font-size: 12.4vw;
+  font-size: 16.5vw;
 }
 .developer {
   line-height: 60%;
@@ -367,10 +367,7 @@ nav .menu a.active {
     content: "————————";
     letter-spacing: -8px;
   }
-  /* .maqueta {
-    line-height: 100%;
-    font-size: 11vw;
-  } */
+
   .developer {
     line-height: 90%;
     font-size: 13.5vw;
@@ -405,7 +402,7 @@ nav .menu a.active {
   }
   .maqueta {
     line-height: 120%;
-    font-size: 11.8vw;
+    font-size: 17vw;
   }
   .developer {
     line-height: 80%;
@@ -661,7 +658,7 @@ height: auto;
   gap: 10px;
   color: var(--text-color);
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 1000px;
 }
 @media (max-width: 768px) {
   .listahabilidades {
