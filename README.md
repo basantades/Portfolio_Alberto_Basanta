@@ -12,6 +12,9 @@ Hoy en día, pese a todo, **el sitio sigue funcionando perfectamente en navegado
 
 Puedes explorar el portafolio en línea en: [https://basantades.vercel.app/](https://basantades.vercel.app/)
 
+👉 También puedes ver la **presentación del proyecto** que realicé en su momento aquí: [Presentación Portfolio - Google Drive](https://drive.google.com/file/d/1F20Uk5kR9rLVoVZmWwduj-jaT1XOhEfh/view)
+
+
 ## Navegación
 
 Una vez abierto el `index.html`, podrás navegar por las diferentes secciones de mi portafolio:
