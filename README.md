@@ -19,11 +19,11 @@ Puedes explorar el portafolio en línea en: [https://basantades.vercel.app/](htt
 
 Una vez abierto el `index.html`, podrás navegar por las diferentes secciones de mi portafolio:
 
-- **Inicio:** Presentación y bienvenida.
-- **Portfolio:** Galería de proyectos destacados con descripciones y enlaces.
+- **Inicio:** Presentación.
+- **Portfolio:** Proyectos web destacados con descripciones y enlaces.
 - **Galería:** Muestra de trabajos de diseño gráfico.
 - **Sobre mí:** Información personal, habilidades y aficiones.
-- **Contacto:** Formulario y enlaces a redes sociales para establecer comunicación.
+- **Contacto:** Correro, telefono y linkedin para establecer comunicación.
 
 ## Características
 
