@@ -4,7 +4,11 @@
 
 ## Descripción
 
-Bienvenido a mi portafolio personal, donde presento mis habilidades y proyectos en diseño gráfico y desarrollo web. Este sitio web está desarrollado con HTML, CSS y JavaScript puro, ofreciendo una experiencia interactiva y responsiva para los visitantes.
+Bienvenido a mi portafolio personal, donde presento mis habilidades y proyectos en desarrollo web y diseño gráfico.
+
+Este proyecto fue **el primer portfolio** que desarrollé, creado con **HTML, CSS y JavaScript puro**. Aunque no sigue las mejores prácticas actuales (el código es extenso y podría optimizarse/refactorizarse), refleja el esfuerzo y el cariño que dediqué en su momento, con los conocimientos que tenía entonces.
+
+Hoy en día, pese a todo, **el sitio sigue funcionando perfectamente en navegador**, ofreciendo una experiencia interactiva y responsiva para los visitantes.
 
 Puedes explorar el portafolio en línea en: [https://basantades.vercel.app/](https://basantades.vercel.app/)
 
@@ -31,9 +35,9 @@ Una vez abierto el `index.html`, podrás navegar por las diferentes secciones de
 - **CSS3:** Estilos y diseño visual, incluyendo animaciones y transiciones.
 - **JavaScript:** Funcionalidades interactivas como el cambio de tema, selección de paletas de colores y animaciones dinámicas.
 
-## Licencia
+## Reflexión personal
 
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto representa un momento muy importante en mi trayectoria: el paso de diseñador gráfico a desarrollador web. Aunque sé que hoy podría mejorarlo mucho más, estoy orgulloso de lo que conseguí en aquel momento y de todo lo que he aprendido desde entonces.
 
 ## Contacto
 
