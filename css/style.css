@@ -328,7 +328,7 @@ nav .menu a.active {
   }
 }
 .dise {
-  font-size: 15vw;
+  font-size: 15.3vw;
   line-height: 100%;
 }
 .front {
@@ -344,7 +344,7 @@ nav .menu a.active {
 }
 .maqueta {
   line-height: 100%;
-  font-size: 16.5vw;
+  font-size: 17.5vw;
 }
 .developer {
   line-height: 60%;
@@ -382,7 +382,7 @@ nav .menu a.active {
   }
   .dise {
     font-size: 24vw;
-    line-height: 100%;
+    line-height: 130%;
   }
   .front {
     font-size: 26vw;
@@ -401,7 +401,7 @@ nav .menu a.active {
     letter-spacing: -8px;
   }
   .maqueta {
-    line-height: 120%;
+    line-height: 100%;
     font-size: 17vw;
   }
   .developer {
