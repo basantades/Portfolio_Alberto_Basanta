@@ -658,7 +658,7 @@ height: auto;
   gap: 10px;
   color: var(--text-color);
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1100px;
 }
 @media (max-width: 768px) {
   .listahabilidades {
@@ -1032,6 +1032,10 @@ form button:hover {
   -webkit-mask: url(../images/iconos/studio-code.svg) no-repeat 50% 50%;
   mask: url(../images/iconos/studio-code.svg) no-repeat 50% 50%;
 }
+.iconoCursor {
+  -webkit-mask: url(../images/iconos/cursor.svg) no-repeat 50% 50%;
+  mask: url(../images/iconos/cursor.svg) no-repeat 50% 50%;
+}
 .iconoHtml {
   -webkit-mask: url(../images/iconos/html.svg) no-repeat 50% 50%;
   mask: url(../images/iconos/html.svg) no-repeat 50% 50%;
@@ -1039,6 +1043,10 @@ form button:hover {
 .iconoCss {
   -webkit-mask: url(../images/iconos/css.svg) no-repeat 50% 50%;
   mask: url(../images/iconos/css.svg) no-repeat 50% 50%;
+}
+.iconoSass {
+  -webkit-mask: url(../images/iconos/sass.svg) no-repeat 50% 50%;
+  mask: url(../images/iconos/sass.svg) no-repeat 50% 50%;
 }
 .iconoJs {
   -webkit-mask: url(../images/iconos/javascript.svg) no-repeat 50% 50%;
